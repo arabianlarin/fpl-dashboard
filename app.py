@@ -3,6 +3,11 @@ import pandas as pd
 import charts as ch
 
 league_id = 1209664
+st.set_page_config(
+    page_title='Ziga-Zaga FPL Dashboard',
+    page_icon='🏳‍🌈',  # You can use an emoji OR a local image file (e.g. "logo.png")
+    layout='wide'
+)
 
 st.title('FPL Dashboard')
 
