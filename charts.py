@@ -118,12 +118,12 @@ def table_highest_scores(league_id):
             )]
         )
         
-        fig.update_layout(
-            title='Highest Points Each GW',
-            template='plotly_dark',
-            width = 800,
-            height = 350
-        )
+    fig.update_layout(
+        title='Highest Points Each GW',
+        template='plotly_dark',
+        width = 800,
+        height = 350
+    )
     
     return fig
 
