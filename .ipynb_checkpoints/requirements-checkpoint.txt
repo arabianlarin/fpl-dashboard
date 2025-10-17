@@ -1,0 +1,8 @@
+streamlit
+duckdb
+plotly
+ipywidgets
+IPython
+sklearn
+scikit-learn
+dash
