@@ -7,13 +7,12 @@ import ipywidgets as widgets
 from IPython.display import display, clear_output
 from ipywidgets import interact, Dropdown, Output, VBox, HBox
 from sklearn.preprocessing import MinMaxScaler
-from dash import Dash, dcc, html, Output, Input
 import fpl_api as fa
-import datasets as da
+from datasets import get_dataset
 
 def chart_points_by_gw(league_id):
     global gw
-    gw = da.get_dataset(league_id)#.gw
+    gw = get_dataset(league_id).gw
     fig = px.line(gw.sort_values(['player_name', 'event']),
               x='event',
               y='net_points',
@@ -74,6 +73,115 @@ def chart_average_by_gw(league_id):
     fig.update_layout(
         title='Average Points by GW',
         template='plotly_dark'
+    )
+    
+    return fig
+
+def chart_standings_by_gw(league_id):
+    wo_average = gw[gw.player_name != 'Average']
+    fig = px.line(wo_average.sort_values(['player_name', 'event']),
+                  x='event',
+                  y='league_rank',
+                  color='player_name',
+                  title='League standings by GW',
+          #         category_orders={'player_name': ['Assyl Zhassyl', 'Bekzat Kuanyshbay',
+          #  'Bekzat Sansyzbay', 'Dake Bratan', 'Kaisar Yessaly',
+          #  'Kazybek Nurmanov', 'Makhsutov Ziedulla', 'Rakhat Beisenbek',
+          #  'Rakhat Zhussupkhanov', 'Sanzhar Yendybayev', 'Zhanuzak Zholdybay', 'Average']},
+                  color_discrete_sequence=pc.qualitative.Light24)
+    fig.update_yaxes(autorange='reversed')
+    fig.update_layout(
+        xaxis_title='Gameweek',
+        yaxis_title='League Rank',
+        legend_title='Manager',
+        template='plotly_dark'
+    )
+    return fig
+
+def table_highest_scores(league_id):
+    highest_scores = get_dataset(league_id).highest_scores
+    fig = go.Figure(
+        data=[go.Table(
+                columnwidth=[10, 80, 50, 20, 50],
+                header=dict(
+                    values=['GW', 'Name', 'Team Name', 'Points', 'Chip Used'],
+                    fill_color='lightgray',
+                    align='center',
+                    font=dict(color='black', size=12)
+                ),
+                cells=dict(
+                    values=[highest_scores[col] for col in highest_scores.columns],
+                    fill_color='white',
+                    align='center',
+                    font=dict(color='black', size=11)
+                )
+            )]
+        )
+        
+        fig.update_layout(
+            title='Highest Points Each GW',
+            template='plotly_dark',
+            width = 800,
+            height = 350
+        )
+    
+    return fig
+
+def table_lowest_scores(league_id):
+    lowest_scores = get_dataset(league_id).lowest_scores
+    fig = go.Figure(
+        data=[go.Table(
+            columnwidth=[10, 20, 15, 10, 15],
+            header=dict(
+                values=['GW', 'Name', 'Team Name', 'Points', 'Chip Used'],
+                fill_color='lightgray',
+                align='center',
+                font=dict(color='black', size=12)
+            ),
+            cells=dict(
+                values=[lowest_scores_gw[col] for col in lowest_scores_gw.columns],
+                fill_color='white',
+                align='center',
+                font=dict(color='black', size=11)
+            )
+        )]
+    )
+    
+    fig.update_layout(
+        title='Lowest Points Each GW',
+        template='plotly_dark',
+        width = 800,
+        height = 350
+    )
+    
+    return fig
+
+def table_standings(league_id):
+    standings = get_dataset(league_id).standings
+    standings = standings[['event', 'player_name', 'team_name', 'net_points', 'total_points', 'league_rank_dyn', 'prev_league_rank', 'overall_rank', 'chip']]
+    fig = go.Figure(
+        data=[go.Table(
+            columnwidth=[10, 80, 50, 20, 50, 50, 50, 50, 50],
+            header=dict(
+                values=['GW', 'Name', 'Team Name', 'Points', 'Total Points', 'League Rank', 'Previous League Rank', 'Overall Rank', 'Chip Used'],
+                fill_color='lightgray',
+                align='center',
+                font=dict(color='black', size=12)
+            ),
+            cells=dict(
+                values=[standings[col] for col in standings.columns],
+                fill_color='white',
+                align='center',
+                font=dict(color='black', size=11)
+            )
+        )]
+    )
+    
+    fig.update_layout(
+        title=f'League Standings GW{standings.event.max()}',
+        template='plotly_dark',
+        width = 1200,
+        height = 510
     )
     
     return fig

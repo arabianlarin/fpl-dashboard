@@ -2,9 +2,11 @@ import duckdb
 import fpl_api as fa
 
 class datasetData:
-    def __init__(self, gw, gw_detailed):
+    def __init__(self, gw, highest_scores, lowest_scores, standings):
         self.gw = gw
-        self.gw_detailed = gw_detailed
+        self.highest_scores = highest_scores
+        self.lowest_scores = lowest_scores
+        self.standings = standings
 
 def get_dataset(league_id):
 
@@ -77,4 +79,75 @@ def get_dataset(league_id):
     # left join teams dt on ph.team_name = dt.name
     # ''').to_df()
 
-    return gw#datasetData(gw, gw_detailed)
+    
+    highest_scores = duckdb.query('''
+    select event, player_name, team_name, net_points,
+    coalesce(
+      case when chip = 'wildcard' then 'Wildcard'
+           when chip = 'freehit' then 'Free Hit'
+           when chip = '3xc' then 'Triple Captain'
+           when chip = 'benchboost' then 'Bench Boost'
+           else chip end,
+      'None')
+    from (
+    select
+    *, row_number() over (partition by event order by net_points desc) gw_rank
+    from gw) a
+    where gw_rank = 1
+    order by 1
+    ''').to_df()
+
+    lowest_scores = duckdb.query('''
+    select event, player_name, team_name, net_points,
+    coalesce(
+      case when chip = 'wildcard' then 'Wildcard'
+           when chip = 'freehit' then 'Free Hit'
+           when chip = '3xc' then 'Triple Captain'
+           when chip = 'benchboost' then 'Bench Boost'
+           else chip end,
+      'None')
+    from (
+    select
+    *, row_number() over (partition by event order by net_points desc) gw_rank
+    from gw) a
+    where gw_rank = 11
+    order by 1
+    ''').to_df()
+
+    standings = duckdb.query('''
+    select
+    event,
+    player_name,
+    team_name,
+    net_points,
+    total_points,
+    case
+      when league_rank < prev_league_rank then concat('⬆️ ', cast(league_rank as varchar))
+      when league_rank > prev_league_rank then concat('⬇️ ', cast(league_rank as varchar))
+      else concat('↔️ ', cast(league_rank as varchar))
+    end league_rank_dyn,
+    league_rank,
+    coalesce(cast(prev_league_rank as varchar), 'N/A') prev_league_rank,
+    overall_rank,
+    coalesce(
+      case when chip = 'wildcard' then 'Wildcard'
+           when chip = 'freehit' then 'Free Hit'
+           when chip = '3xc' then 'Triple Captain'
+           when chip = 'benchboost' then 'Bench Boost'
+           else chip end,
+      'None') chip
+    from (
+    select
+    event, player_name, team_name, net_points, total_points, league_rank, lag(league_rank) over (partition by player_name order by event asc) prev_league_rank, overall_rank,
+    chip
+    from gw
+    where 1=1
+    --and event = (select max(event) from gw)
+    and player_name != 'Average'
+    order by league_rank)
+    where event = (select max(event) from gw)
+    order by event, league_rank
+    '''
+    ).to_df()
+
+    return datasetData(gw, highest_scores, lowest_scores, standings)
