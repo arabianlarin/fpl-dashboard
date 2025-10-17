@@ -139,7 +139,7 @@ def table_lowest_scores(league_id):
                 font=dict(color='black', size=12)
             ),
             cells=dict(
-                values=[lowest_scores_gw[col] for col in lowest_scores_gw.columns],
+                values=[lowest_scores[col] for col in lowest_scores.columns],
                 fill_color='white',
                 align='center',
                 font=dict(color='black', size=11)
