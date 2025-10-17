@@ -7,7 +7,6 @@ import ipywidgets as widgets
 from IPython.display import display, clear_output
 from ipywidgets import interact, Dropdown, Output, VBox, HBox
 from sklearn.preprocessing import MinMaxScaler
-from dash import Dash, dcc, html, Output, Input
 import fpl_api as fa
 import datasets as da
 
