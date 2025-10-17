@@ -180,8 +180,6 @@ def table_standings(league_id):
     fig.update_layout(
         title=f'League Standings GW{standings.event.max()}',
         template='plotly_dark',
-        width = 1200,
-        height = 510
     )
     
     return fig
