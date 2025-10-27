@@ -1,0 +1,9 @@
+streamlit
+duckdb
+plotly
+ipywidgets
+IPython
+scikit-learn
+rapidfuzz
+unidecode
+streamlit_aggrid
