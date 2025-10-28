@@ -10,7 +10,7 @@ def get_player_history_detailed():
         player_id = row.get('id')
         first = (row.get('first_name') or '').strip()
         second = (row.get('second_name') or '').strip()
-        full_name = f"{first} {second}".strip() or row.get('web_name') or ''
+        full_name = row.get('web_name')
     
         team_id = row.get('team')
         team_name = get_teams().team_lookup.get(team_id, '')
