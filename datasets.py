@@ -214,7 +214,20 @@ def get_player_data():
     'savio moreira': 'savio',
     'lucas tolentino': 'lucas paqueta',
     'joao victor': 'joao gomes',
-    'rodrigo rodri': 'rodri'
+    'rodrigo rodri': 'rodri',
+    'richarlison de': 'richarlison',
+    'joelinton cassio': 'joelinton',
+    'bernardo mota': 'bernardo silva',
+    'nico gonzalez': 'nicolas gonzalez',
+    'igor julio': 'igor',
+    'florentino ibrain': 'florentino luis',
+    'yeremy pino': 'yeremi pino',
+    'ruben dos': 'ruben dias',
+    'murillo costa': 'murillo',
+    'emiliano buendia': 'emi buendia',
+    'matheus santos': 'matheus cunha',
+    'andrey nascimento': 'andrey santos',
+    'igor thiago': 'thiago'
     }
 
     players['name_norm'] = players['name_norm'].replace(manual_map)

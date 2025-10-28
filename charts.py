@@ -713,7 +713,62 @@ def chart_perform_xg():
     
     return xg_data(fig_u, fig_o)
 
+def summarize_transfers(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Aggregates player transfer data per manager per gameweek.
 
+    Input columns:
+        manager, gw, player_in, player_in_points, player_out, player_out_points
+
+    Output columns:
+        Manager, GW, Players In, Players In Points Total, Players Out, Players Out Points Total
+    """
+
+    pl = pd.read_csv('df.csv')
+
+    grouped = duckdb.query('''
+                 select
+                 pl1.gameweek,
+                 manager_name,
+                 pl1.player_name player_in,
+                 pl1.total_points points_in,
+                 pl2.player_name player_out,
+                 pl2.total_points points_in
+                 from df
+                 left join pl pl1 on df.element_in = pl1.player_id and df.event = pl1.gameweek
+                 left join pl pl2 on df.element_out = pl2.player_id and df.event = pl2.gameweek
+                 ''').to_df()
+
+    # grouped = (
+    #     df.groupby(["manager_name", "event"], as_index=False)
+    #     .agg({
+    #         "player_in": list,
+    #         "player_in_points": list,
+    #         "player_out": list,
+    #         "player_out_points": list
+    #     })
+    # )
+
+    # Format players with their points, e.g., "Salah (6), Haaland (10)"
+    grouped["Players In"] = grouped.apply(
+        lambda x: ", ".join(f"{p} ({pts})" for p, pts in zip(x["player_in"], x["points_in"])), axis=1
+    )
+
+    grouped["Players Out"] = grouped.apply(
+        lambda x: ", ".join(f"{p} ({pts})" for p, pts in zip(x["player_out"], x["points_out"])), axis=1
+    )
+
+    # Compute total points for in/out players
+    grouped["Players In Points Total"] = grouped["points_in"].apply(sum)
+    grouped["Players Out Points Total"] = grouped["points_out"].apply(sum)
+
+    # Clean final columns
+    grouped = grouped.rename(columns={"manager_name": "Manager", "gameweek": "GW"})
+    grouped = grouped[
+        ["Manager", "GW", "Players In", "Players In Points Total", "Players Out", "Players Out Points Total"]
+    ]
+
+    return grouped
 
 
 

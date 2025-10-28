@@ -300,4 +300,127 @@ def get_chips(league_id):
         if not chips.empty:
             all_chips.append(chips)
     return pd.concat(all_chips, ignore_index=True) if all_chips else pd.DataFrame()
+
+@st.cache_data(ttl=86400)
+def get_league_managers(league_id: int):
+    """Fetch all manager IDs and names in a classic league."""
+    url = f"https://fantasy.premierleague.com/api/leagues-classic/{league_id}/standings/"
+    managers = []
+    page = 1
+
+    while True:
+        response = requests.get(url, params={'page_standings': page}, timeout=15)
+        response.raise_for_status()
+        data = response.json()
+
+        standings = data.get('standings', {}).get('results', [])
+        if not standings:
+            break
+
+        for s in standings:
+            managers.append({
+                "manager_id": s["entry"],
+                "manager_name": s["player_name"],
+                "team_name": s["entry_name"]
+            })
+
+        if not data.get('standings', {}).get('has_next'):
+            break
+        page += 1
+        sleep(1)
+
+    return pd.DataFrame(managers)
+
+@st.cache_data(ttl=86400)
+def get_manager_transfers(entry_id: int):
+    """Fetch all transfers made by a given manager."""
+    url = f"https://fantasy.premierleague.com/api/entry/{entry_id}/transfers/"
+    r = requests.get(url, timeout=15)
+    r.raise_for_status()
+    transfers = r.json()
+
+    if not transfers:
+        return pd.DataFrame()
+
+    df = pd.DataFrame(transfers)
+    df["entry"] = entry_id
+    return df
+
+@st.cache_data(ttl=86400)
+def get_player_names():
+    """Get mapping of player IDs to names."""
+    r = requests.get("https://fantasy.premierleague.com/api/bootstrap-static/")
+    r.raise_for_status()
+    data = r.json()
+    elements = pd.DataFrame(data["elements"])
+    elements["full_name"] = elements["first_name"] + " " + elements["second_name"]
+    return elements[["id", "full_name", "web_name"]]
+
+@st.cache_data(ttl=86400)
+def get_league_transfers_raw(league_id: int) -> pd.DataFrame:
+    """
+    Fetches all transfers made by managers in a given FPL league.
+    Returns a raw dataframe (as provided by the FPL API), without joining player names.
+    """
     
+    # 1. Get all managers in the league
+    managers = []
+    page = 1
+
+    while True:
+        url = f"https://fantasy.premierleague.com/api/leagues-classic/{league_id}/standings/"
+        r = requests.get(url, params={"page_standings": page}, timeout=15)
+        r.raise_for_status()
+        data = r.json()
+
+        results = data.get("standings", {}).get("results", [])
+        if not results:
+            break
+
+        for res in results:
+            managers.append({
+                "entry": res["entry"],
+                "player_name": res["player_name"],
+                "entry_name": res["entry_name"]
+            })
+
+        if not data.get("standings", {}).get("has_next"):
+            break
+
+        page += 1
+        sleep(1)
+
+    if not managers:
+        print("⚠️ No managers found in this league.")
+        return pd.DataFrame()
+
+    all_transfers = []
+
+    # 2. For each manager, get transfer data
+    for m in managers:
+        entry_id = m["entry"]
+        transfers_url = f"https://fantasy.premierleague.com/api/entry/{entry_id}/transfers/"
+        try:
+            tr = requests.get(transfers_url, timeout=15)
+            tr.raise_for_status()
+            transfers = tr.json()
+
+            if transfers:
+                df = pd.DataFrame(transfers)
+                df["entry"] = entry_id
+                df["manager_name"] = m["player_name"]
+                df["team_name"] = m["entry_name"]
+                all_transfers.append(df)
+
+        except Exception as e:
+            print(f"Failed to fetch transfers for {m['player_name']} ({entry_id}): {e}")
+
+        sleep(0.2)  # be gentle to FPL API
+
+    # 3. Combine everything
+    if all_transfers:
+        df_all = pd.concat(all_transfers, ignore_index=True)
+        return df_all
+    else:
+        print("⚠️ No transfers found for any manager.")
+        return pd.DataFrame()
