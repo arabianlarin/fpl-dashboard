@@ -186,19 +186,7 @@ with tab1:
         
         st.markdown('<div class="centered-chart">', unsafe_allow_html=True)
 
-        config = {
-            "toImageButtonOptions": {
-                "format": "png",         # one of 'png', 'svg', 'jpeg', 'webp'
-                "filename": f"{player1} vs {player2} att",  # 👈 custom name
-                #"height": 600,
-                #"width": 1000,
-                #"scale": 2               # multiply resolution
-            }
-        }
-
         st.plotly_chart(fig7, use_container_width=True, config=config)
-
-        fig_json = json.dumps(fig7, cls=PlotlyJSONEncoder)
         
         st.markdown(
             """
@@ -220,16 +208,6 @@ with tab2:
     if player1 and player2:
     
         fig7 = ch.chart_player_comparison_def(player1, player2)
-
-        config = {
-            "toImageButtonOptions": {
-                "format": "png",         # one of 'png', 'svg', 'jpeg', 'webp'
-                "filename": f"{player1} vs {player2} def",  # 👈 custom name
-                #"height": 600,
-                #"width": 1000,
-                #"scale": 2               # multiply resolution
-            }
-        }
         
         st.markdown(
             """
@@ -253,16 +231,6 @@ with tab3:
     if player1 and player2:
     
         fig7 = ch.chart_player_comparison_gk(player1, player2)
-
-        config = {
-            "toImageButtonOptions": {
-                "format": "png",         # one of 'png', 'svg', 'jpeg', 'webp'
-                "filename": f"{player1} vs {player2} gk",  # 👈 custom name
-                #"height": 600,
-                #"width": 1000,
-                #"scale": 2               # multiply resolution
-            }
-        }
         
         st.markdown(
             """
