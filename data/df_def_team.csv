@@ -1,0 +1,41 @@
+"Squad","Team_or_Opponent","Tkl_Tackles","TklW_Tackles","Blocks_Blocks","Int","Tkl+Int","Clr","Err"
+"Arsenal","team",134,80,89,54,188,207,5
+"Arsenal","opponent",141,86,100,72,213,326,7
+"Aston Villa","team",130,80,101,50,180,204,3
+"Aston Villa","opponent",189,109,89,85,274,250,6
+"Bournemouth","team",153,88,112,84,237,293,2
+"Bournemouth","opponent",172,111,116,62,234,292,8
+"Brentford","team",143,79,119,70,213,260,3
+"Brentford","opponent",155,94,54,57,212,281,6
+"Brighton","team",177,112,99,71,248,236,4
+"Brighton","opponent",174,98,95,71,245,199,11
+"Burnley","team",155,83,124,95,250,320,5
+"Burnley","opponent",117,67,84,55,172,202,2
+"Chelsea","team",147,89,79,93,240,181,9
+"Chelsea","opponent",164,100,92,74,238,247,8
+"Crystal Palace","team",188,116,97,81,269,319,8
+"Crystal Palace","opponent",114,62,95,83,197,260,6
+"Everton","team",155,97,107,70,225,266,11
+"Everton","opponent",171,88,93,71,242,284,6
+"Fulham","team",163,93,89,60,223,239,9
+"Fulham","opponent",129,71,107,67,196,230,9
+"Leeds United","team",169,103,87,81,250,252,3
+"Leeds United","opponent",154,89,108,58,212,220,8
+"Liverpool","team",125,80,87,60,185,295,9
+"Liverpool","opponent",155,93,98,97,252,283,7
+"Manchester City","team",130,77,71,63,193,239,7
+"Manchester City","opponent",181,115,118,74,255,182,9
+"Manchester Utd","team",168,103,91,69,237,223,7
+"Manchester Utd","opponent",143,88,94,73,216,254,7
+"Newcastle Utd","team",120,74,90,73,193,212,5
+"Newcastle Utd","opponent",139,82,100,88,227,271,6
+"Nott'ham Forest","team",133,79,90,71,204,205,13
+"Nott'ham Forest","opponent",130,79,91,75,205,239,5
+"Sunderland","team",152,82,92,72,224,315,7
+"Sunderland","opponent",120,77,98,46,166,240,3
+"Tottenham","team",171,102,77,52,223,257,11
+"Tottenham","opponent",185,101,82,56,241,286,7
+"West Ham","team",122,69,95,53,175,284,4
+"West Ham","opponent",156,100,87,63,219,248,3
+"Wolves","team",199,112,91,78,277,264,7
+"Wolves","opponent",145,88,86,73,218,277,8

@@ -1,0 +1,41 @@
+"Squad","Team_or_Opponent","Fls","Fld","Off","Crs","Won_Aerial","Lost_Aerial","Won_percent_Aerial"
+"Arsenal","team",89,92,13,179,137,121,53.1
+"Arsenal","opponent",93,86,7,98,121,137,46.9
+"Aston Villa","team",86,116,14,154,115,117,49.6
+"Aston Villa","opponent",122,86,24,162,117,115,50.4
+"Bournemouth","team",113,91,21,166,144,171,45.7
+"Bournemouth","opponent",97,110,13,152,171,144,54.3
+"Brentford","team",105,78,13,153,163,164,49.8
+"Brentford","opponent",83,103,13,163,164,163,50.2
+"Brighton","team",114,98,20,134,117,132,47
+"Brighton","opponent",100,112,10,144,132,117,53
+"Burnley","team",86,78,18,98,138,169,45
+"Burnley","opponent",81,83,12,276,169,138,55
+"Chelsea","team",103,109,20,161,115,98,54
+"Chelsea","opponent",112,100,15,142,98,115,46
+"Crystal Palace","team",97,90,13,129,168,167,50.1
+"Crystal Palace","opponent",94,87,11,192,167,168,49.9
+"Everton","team",95,107,9,162,191,159,54.6
+"Everton","opponent",110,89,17,140,159,191,45.4
+"Fulham","team",127,96,15,175,103,139,42.6
+"Fulham","opponent",98,121,18,150,139,103,57.4
+"Leeds United","team",92,107,9,163,135,156,46.4
+"Leeds United","opponent",108,91,9,169,156,135,53.6
+"Liverpool","team",83,92,9,195,177,135,56.7
+"Liverpool","opponent",96,79,13,145,135,177,43.3
+"Manchester City","team",81,96,9,121,128,91,58.4
+"Manchester City","opponent",99,78,17,137,91,128,41.6
+"Manchester Utd","team",88,104,14,146,152,172,46.9
+"Manchester Utd","opponent",109,84,16,169,172,152,53.1
+"Newcastle Utd","team",107,111,6,198,148,125,54.2
+"Newcastle Utd","opponent",113,103,12,141,125,148,45.8
+"Nott'ham Forest","team",100,104,9,220,115,118,49.4
+"Nott'ham Forest","opponent",107,94,11,162,118,115,50.6
+"Sunderland","team",82,92,11,148,167,158,51.4
+"Sunderland","opponent",97,77,12,212,158,167,48.6
+"Tottenham","team",103,80,20,200,116,143,44.8
+"Tottenham","opponent",83,102,11,153,143,116,55.2
+"West Ham","team",97,83,12,163,159,168,48.6
+"West Ham","opponent",87,97,12,196,168,159,51.4
+"Wolves","team",120,77,13,208,169,154,52.3
+"Wolves","opponent",79,119,15,170,154,169,47.7

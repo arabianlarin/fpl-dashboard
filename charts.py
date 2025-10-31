@@ -11,7 +11,7 @@ from IPython.display import display, clear_output
 from ipywidgets import interact, Dropdown, Output, VBox, HBox
 from sklearn.preprocessing import MinMaxScaler
 import fpl_api as fa
-from datasets import get_dataset, get_player_data
+from datasets import get_dataset, get_player_data, get_team_data
 
 def chart_points_by_gw(league_id):
     global gw
@@ -334,7 +334,7 @@ def chart_h2h(league_id, man1, man2):
 def chart_player_comparison_att(player1, player2):
     global data
     data = get_player_data()
-    metrics = ["Sh_per_90_Standard", 'SoT_per_90_Standard', 'G+A_Per', "xG_Expected", "xA_Expected", 'KP', 'creativity', 'threat']
+    metrics = ["Sh_per_90_Standard", 'SoT_per_90_Standard', 'G+A_Per', "npxG_Expected", "xA_Expected", 'KP', 'creativity', 'threat']
     scaler = MinMaxScaler()
     df_scaled = data.copy()
     df_scaled[metrics] = scaler.fit_transform(data[metrics])
@@ -381,7 +381,7 @@ def chart_player_comparison_att(player1, player2):
     
     fig.add_trace(go.Scatterpolar(
         r=p1,
-        theta=['Shots/90', 'Shots on Target/90', 'G+A/90', 'xG/90', 'xA/90', 'Key Passes/90', 'Creativity', 'Threat'],
+        theta=['Shots/90', 'Shots on Target/90', 'G+A/90', 'npxG/90', 'xA/90', 'Key Passes/90', 'Creativity', 'Threat'],
         fill='toself',
         name=player1,
         line=dict(color='#D62E0F', width=4),
@@ -390,7 +390,7 @@ def chart_player_comparison_att(player1, player2):
     ), row=1, col=2)
     fig.add_trace(go.Scatterpolar(
         r=p2,
-        theta=['Shots/90', 'Shots on Target/90', 'G+A/90', 'xG/90', 'xA/90', 'Key Passes/90', 'Creativity', 'Threat'],
+        theta=['Shots/90', 'Shots on Target/90', 'G+A/90', 'npxG/90', 'xA/90', 'Key Passes/90', 'Creativity', 'Threat'],
         fill='toself',
         name=player2,
         line=dict(color='#120FD6', width=4),
@@ -605,8 +605,8 @@ def chart_player_comparison_gk(player1, player2):
     return fig
 
 def table_player_data():
-    data_c = get_player_data()[['web_name', 'short_name', 'Next_3_Fixtures', 'position', 'now_cost', 'selected_by_percent', 'total_points',
-         'Min_Playing', 'Gls', 'G_minus_PK', 'Ast', 'G+A', 'npxG_Expected', 'xG_Expected', 'diff', 'xA_Expected', 'Sh_per_90_Standard',
+    data_c = get_player_data()[['web_name', 'emo_name', 'Next_3_Fixtures', 'position', 'now_cost', 'selected_by_percent', 'total_points',
+         'Min_Playing', 'Gls', 'PK', 'Ast', 'G+A', 'npxG_Expected', 'xG_Expected', 'diff', 'xA_Expected', 'npxG_Per', 'xA_Per', 'Sh_per_90_Standard',
          'SoT_per_90_Standard', 'Shots on Target %', 'G_per_Sh_Standard', 'KP_per_90', 'Crs_per_90', 'Final_Third_per_90',
         'defensive_contribution_per_90', 'Tkl_Tackles', 'TklW_Tackles', 'Tackles Won %',
        'Blocks_Blocks', 'Int', 'Clr', 'Err', 'CBIT/90',
@@ -614,7 +614,7 @@ def table_player_data():
        'PKA_Penalty', 'PKsv_Penalty', 'PKm_Penalty', 'Save_percent_Penalty', 'expected_goals_conceded_per_90'
                                ]]
     data_c.columns = ['Player', 'Club', 'Next 3 Opp', 'Position', 'Price', 'Selected by %', 'Total Points',
-                   'Minutes', 'Goals', 'nPG', 'Assists', 'G+A', 'npxG', 'xG', 'npxG minus G', 'xA', 'Shots/90', 'Shots on Target/90',
+                   'Minutes', 'Goals', 'Pens', 'Assists', 'G+A', 'npxG', 'xG', 'G minus npxG', 'xA', 'npxG/90', 'xA/90', 'Shots/90', 'Shots on Target/90',
                        'Shots on Target %', 'Goals per Shot', 'Key Passes/90', 'Crosses/90', 'Passes into final 3rd/90',
             'Defensive Contribution/90', 'Tackles Attempted/90', 'Tackles Won/90', 'Tackles Won %', 'Blocks/90', 'Interceptions/90', 'Clearances/90',
                      'Errors Lead to Shot/90', 'CBIT/90',
@@ -622,8 +622,26 @@ def table_player_data():
                      ]
     return data_c
 
+def table_team_data():
+    data_c = get_team_data()[['emo_name', 'Team_or_Opponent', 'Next_3_Fixtures',
+         'Min_Playing', 'Gls', 'PK', 'Ast', 'G+A', 'npxG_Expected', 'xG_Expected', 'diff', 'xA_Expected', 'npxG_Per', 'xA_Per', 'Sh_per_90_Standard',
+         'SoT_per_90_Standard', 'Shots on Target %', 'G_per_Sh_Standard', 'KP_per_90', 'Crs_per_90', 'Final_Third_per_90',
+        'Tkl_Tackles', 'TklW_Tackles', 'Tackles Won %',
+       'Blocks_Blocks', 'Int', 'Clr', 'Err', 'CBIT/90',
+                               'SoTA', 'Saves', 'Save_percent', 'CS', 'CS_percent', 'PKatt_Penalty',
+       'PKA_Penalty', 'PKsv_Penalty', 'PKm_Penalty', 'Save_percent_Penalty'
+                               ]]
+    data_c.columns = ['Club', 'Team_or_Opponent', 'Next 3 Opp',
+                   'Minutes', 'Goals', 'Pens', 'Assists', 'G+A', 'npxG', 'xG', 'G minus npxG', 'xA', 'npxG/90', 'xA/90', 'Shots/90', 'Shots on Target/90',
+                       'Shots on Target %', 'Goals per Shot', 'Key Passes/90', 'Crosses/90', 'Passes into final 3rd/90',
+            'Tackles Attempted/90', 'Tackles Won/90', 'Tackles Won %', 'Blocks/90', 'Interceptions/90', 'Clearances/90',
+                     'Errors Lead to Shot/90', 'CBIT/90',
+                     'Shots on Target Attempted', 'Saves', 'Saves %', 'Clean Sheets', 'Clean Sheets %', 'Penalties Attempted', 'Penalties Conceded', 'Penalties Saved', 'Penalties Missed', 'Penalties Saved %'
+                     ]
+    return data_c
+
 def chart_xg():
-    data_xg = get_player_data()[['web_name', 'G_minus_PK', 'npxG_Expected']].sort_values('G_minus_PK', ascending=False).head(10)
+    data_xg = get_player_data()[['web_name', 'position', 'G_minus_PK', 'npxG_Expected', 'photo']].sort_values('G_minus_PK', ascending=False).head(10)
     fig = px.scatter(
         data_xg,
         x='npxG_Expected',
@@ -631,6 +649,38 @@ def chart_xg():
         text='web_name',       # shows player names on hover
         size_max=10,
         title='Non-Penalty Goals vs xG (Top 10 scorers)'
+    )
+
+    # fig.update_traces(marker_opacity=0, text=None)
+
+    # for _, row in data_xg.iterrows():
+    #     fig.add_layout_image(
+    #         dict(
+    #             source=fa.encode_image(row["photo"]),  # base64-encoded local image
+    #             x=row["npxG_Expected"],
+    #             y=row["G_minus_PK"],
+    #             xref="x",
+    #             yref="y",
+    #             sizex=3,
+    #             sizey=3,
+    #             xanchor="center",
+    #             yanchor="middle",
+    #             layer="above"
+    #         )
+    #     )
+
+    min_val = min(data_xg["npxG_Expected"].min(), data_xg["G_minus_PK"].min())
+    max_val = max(data_xg["npxG_Expected"].max(), data_xg["G_minus_PK"].max())
+
+    # Add y=x line
+    fig.add_trace(
+        go.Scatter(
+            x=[min_val, max_val],
+            y=[min_val, max_val],
+            mode="lines",
+            line=dict(color="gray", dash="dash"),
+            showlegend=False
+        )
     )
 
     fig.update_traces(textposition='top center')
@@ -661,6 +711,20 @@ def chart_xa():
     #         yshift=5
     #     )
     
+    min_val = min(data_xa["xA_Expected"].min(), data_xa["Ast"].min())
+    max_val = max(data_xa["xA_Expected"].max(), data_xa["Ast"].max())
+
+    # Add y=x line
+    fig.add_trace(
+        go.Scatter(
+            x=[min_val, max_val],
+            y=[min_val, max_val],
+            mode="lines",
+            line=dict(color="gray", dash="dash"),
+            showlegend=False
+        )
+    )
+
     fig.update_traces(textposition='top right')
     fig.update_layout(xaxis_title='Expected Assists (xA)',
                       yaxis_title='Assists deliveried',
@@ -684,7 +748,7 @@ def chart_perform_xg():
         x='diff',               # bar length
         y='web_name',           # player names
         orientation='h',        # horizontal
-        title='Difference between Goals and xG',
+        title='Difference between non-P Goals and npxG',
         text='diff'             # show numbers on bars
     )
 
@@ -700,7 +764,7 @@ def chart_perform_xg():
         x='diff',               # bar length
         y='web_name',           # player names
         orientation='h',        # horizontal
-        title='Difference between Goals and xG',
+        title='Difference between non-P Goals and npxG',
         text='diff'             # show numbers on bars
     )
 
@@ -770,6 +834,119 @@ def summarize_transfers(df: pd.DataFrame) -> pd.DataFrame:
 
     return grouped
 
+def chart_xg_diff_teams():
+    df = get_team_data()
+    df = df[df.Team_or_Opponent=='team'][['short_name', 'G_minus_PK', 'npxG_Expected', 'logo']]
+    df.columns = ['Club', 'Goals non-p', 'npxG', 'logo']
+    fig = px.scatter(
+        df,
+        x="npxG",
+        y="Goals non-p",
+        text="Club",  # show team names
+        title="Goals vs npxG"
+    )
+    
+    fig.update_traces(marker_opacity=0, text=None)
+
+    for _, row in df.iterrows():
+        fig.add_layout_image(
+            dict(
+                source=fa.encode_image(row["logo"]),  # base64-encoded local image
+                x=row["npxG"],
+                y=row["Goals non-p"],
+                xref="x",
+                yref="y",
+                sizex=2,
+                sizey=2,
+                xanchor="center",
+                yanchor="middle",
+                layer="above"
+            )
+        )
+
+    min_val = min(df["npxG"].min(), df["Goals non-p"].min())
+    max_val = max(df["npxG"].max(), df["Goals non-p"].max())
+
+    # Add y=x line
+    fig.add_trace(
+        go.Scatter(
+            x=[min_val, max_val],
+            y=[min_val, max_val],
+            mode="lines",
+            line=dict(color="gray", dash="dash"),
+            showlegend=False
+        )
+    )
+
+    fig.update_traces(
+        textposition="top center",
+        marker=dict(size=10),
+    )
+
+    fig.update_layout(
+        xaxis_title="npxG",
+        yaxis_title="Goals Scored (non-penalty)",
+        template="plotly_dark",
+    )
+
+    return fig
+
+def chart_xg_diff_teams_opp():
+    df = get_team_data()
+    df = df[df.Team_or_Opponent=='opponent'][['short_name', 'G_minus_PK', 'npxG_Expected', 'logo']]
+    df.columns = ['Club', 'Goals non-p', 'npxG', 'logo']
+    fig = px.scatter(
+        df,
+        x="npxG",
+        y="Goals non-p",
+        text="Club",  # show team names
+        title="Goals Conceded vs npxG Conceded"
+    )
+
+    fig.update_traces(marker_opacity=0, text=None)
+
+    for _, row in df.iterrows():
+        fig.add_layout_image(
+            dict(
+                source=fa.encode_image(row["logo"]),  # base64-encoded local image
+                x=row["npxG"],
+                y=row["Goals non-p"],
+                xref="x",
+                yref="y",
+                sizex=2,
+                sizey=2,
+                xanchor="center",
+                yanchor="middle",
+                layer="above"
+            )
+        )
+
+    min_val = min(df["npxG"].min(), df["Goals non-p"].min())
+    max_val = max(df["npxG"].max(), df["Goals non-p"].max())
+
+    # Add y=x line
+    fig.add_trace(
+        go.Scatter(
+            x=[min_val, max_val],
+            y=[min_val, max_val],
+            mode="lines",
+            line=dict(color="gray", dash="dash"),
+            showlegend=False
+        )
+    )
+
+    fig.update_traces(
+        textposition="top center",
+        marker=dict(size=10),
+    )
+
+    fig.update_layout(
+        xaxis_title="npxGC",
+        yaxis_title="Goals Scored (non-penalty)",
+        template="plotly_dark",
+    )
+
+    return fig
 
 
 

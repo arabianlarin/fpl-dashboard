@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title='FPL Dashboard', layout='wide',
+st.set_page_config(page_title='FPL Dashboard',# layout='wide',
                    page_icon='icon.png',
     initial_sidebar_state='expanded')
 

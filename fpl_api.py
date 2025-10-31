@@ -5,6 +5,7 @@ import os
 from time import sleep
 import streamlit as st
 import duckdb
+import base64
 
 league_id = 1209664
 num_gameweeks = 38
@@ -424,3 +425,9 @@ def get_league_transfers_raw(league_id: int) -> pd.DataFrame:
     else:
         print("⚠️ No transfers found for any manager.")
         return pd.DataFrame()
+    
+def encode_image(image_file):
+    """Convert image file to base64 string for Plotly"""
+    with open(image_file, "rb") as f:
+        encoded = base64.b64encode(f.read()).decode()
+    return "data:image/png;base64," + encoded

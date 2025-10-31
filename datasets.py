@@ -130,9 +130,17 @@ def get_dataset(league_id):
     net_points,
     total_points,
     case
-      when league_rank < prev_league_rank then concat('⬆️ ', cast(league_rank as varchar))
-      when league_rank > prev_league_rank then concat('⬇️ ', cast(league_rank as varchar))
-      else concat('↔️ ', cast(league_rank as varchar))
+      when league_rank = 1 and league_rank < prev_league_rank then concat('🥇', ' ⬆️')
+      when league_rank = 1 and league_rank = prev_league_rank then concat('🥇', ' ↔️')
+      when league_rank = 2 and league_rank < prev_league_rank then concat('🥈', ' ⬆️')
+      when league_rank = 2 and league_rank = prev_league_rank then concat('🥈', ' ↔️')
+      when league_rank = 2 and league_rank > prev_league_rank then concat('🥈', ' ⬇️')
+      when league_rank = 3 and league_rank < prev_league_rank then concat('🥉', ' ⬆️')
+      when league_rank = 3 and league_rank = prev_league_rank then concat('🥉', ' ↔️')
+      when league_rank = 3 and league_rank > prev_league_rank then concat('🥉', ' ⬇️')
+      when league_rank < prev_league_rank then concat(cast(league_rank as varchar), ' ⬆️')
+      when league_rank > prev_league_rank then concat(cast(league_rank as varchar), ' ⬇️')
+      else concat(cast(league_rank as varchar), ' ↔️')
     end league_rank_dyn,
     league_rank,
     prev_league_rank - league_rank rank_gain,
@@ -251,5 +259,82 @@ def get_player_data():
     full_data['Tackles Won %'] = round(full_data['TklW_Tackles']*100/full_data['Tkl_Tackles'], 2)
     full_data['Shots on Target %'] = round(full_data['SoT_per_90_Standard']/full_data['Sh_per_90_Standard'] * 100, 2)
     full_data['diff'] = round(full_data['G_minus_PK'] - full_data['npxG_Expected'], 2)
+    full_data['photo'] = full_data['photo'].str.replace('jpg', 'png')
+    full_data['photo'] = 'photos/' + full_data.photo
+    full_data['logo'] = 'logos/' + full_data.short_name + '.png'
+
+    emo_map = {
+        'ARS': '🏹 ARS',
+        'AVL': '🦁 AVL',
+        'BUR': '🍷 BUR',
+        'BOU': '🍒 BOU',
+        'BRE': '🐝 BRE',
+        'BHA': '🪽 BHA',
+        'CHE': '🔵 CHE',
+        'CRY': '🦅 CRY',
+        'EVE': '🍬 EVE',
+        'FUL': '🏡 FUL',
+        'LEE': '🦚 LEE',
+        'LIV': '🔴 LIV',
+        'MCI': '🩵 MCI',
+        'MUN': '👹 MUN',
+        'NEW': '🐦 NEW',
+        'NFO': '🌳 NFO',
+        'SUN': '🐈‍⬛ SUN',
+        'TOT': '🐓 TOT',
+        'WHU': '⛏️ WHU',
+        'WOL': '🐺 WOL'
+    }
+
+    full_data['emo_name'] = full_data['short_name'].map(emo_map)
 
     return full_data.fillna(0)
+
+def get_team_data():
+    fb = fbr.get_fbref_data_team()
+    teams = fa.get_teams().teams
+    fixtures = fa.get_fixtures()
+
+    full_data = duckdb.query('''
+    select
+    *
+    from fb
+    left join teams t on fb.Squad = t.name
+    left join fixtures f on t.short_name = f.Team
+    --left join fb fpd on coalesce(pha.fbref_match, pha.name_norm) = fpd.name_norm-- and t.name = fpd.Squad
+    '''
+    ).to_df()
+
+    #full_data['defensive_contribution_per_90'] = round(full_data['defensive_contribution']/90, 2)
+    full_data['CBIT/90'] = round(full_data['TklW_Tackles'] + full_data['Blocks_Blocks'] + full_data['Int'] + full_data['Clr'], 2)
+    full_data['Tackles Won %'] = round(full_data['TklW_Tackles']*100/full_data['Tkl_Tackles'], 2)
+    full_data['Shots on Target %'] = round(full_data['SoT_per_90_Standard']/full_data['Sh_per_90_Standard'] * 100, 2)
+    full_data['diff'] = round(full_data['G_minus_PK'] - full_data['npxG_Expected'], 2)
+    full_data['logo'] = 'logos/' + full_data.short_name + '.png'
+
+    emo_map = {
+        'ARS': '🏹 ARS',
+        'AVL': '🦁 AVL',
+        'BUR': '🍷 BUR',
+        'BOU': '🍒 BOU',
+        'BRE': '🐝 BRE',
+        'BHA': '🪽 BHA',
+        'CHE': '🔵 CHE',
+        'CRY': '🦅 CRY',
+        'EVE': '🍬 EVE',
+        'FUL': '🏡 FUL',
+        'LEE': '🦚 LEE',
+        'LIV': '🔴 LIV',
+        'MCI': '🩵 MCI',
+        'MUN': '👹 MUN',
+        'NEW': '🐦 NEW',
+        'NFO': '🌳 NFO',
+        'SUN': '🐈‍⬛ SUN',
+        'TOT': '🐓 TOT',
+        'WHU': '⛏️ WHU',
+        'WOL': '🐺 WOL'
+    }
+
+    full_data['emo_name'] = full_data['short_name'].map(emo_map)
+
+    return full_data

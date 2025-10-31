@@ -39,7 +39,7 @@ with col4:
 #clubs = st.multiselect("Select clubs", options=df["Club"].unique(), default=df["Club"].unique())
 #player_name = st.text_input("Search player name")
 
-tab1, tab2, tab3 = st.tabs(['Attacking', 'Defending', 'Goalkeeping'])
+tab1, tab2, tab3 = st.tabs(['🎯 Attacking', '🛡 Defending', '🧤 Goalkeeping'])
 
 with tab1:
     filtered_df = df.copy()
@@ -58,7 +58,7 @@ with tab1:
     
     #st.subheader("Filtered Players")
     filtered_df = filtered_df[['Player', 'Club', 'Next 3 Opp', 'Position', 'Price', 'Selected by %', 'Total Points',
-                   'Minutes', 'Goals', 'Assists', 'G+A', 'npxG', 'npxG minus G', 'xG', 'xA', 'Shots/90', 'Shots on Target/90',
+                   'Minutes', 'Goals', 'Pens', 'Assists', 'G+A', 'npxG', 'G minus npxG', 'xG', 'xA', 'npxG/90', 'xA/90', 'Shots/90', 'Shots on Target/90',
                       'Shots on Target %', 'Goals per Shot', 'Key Passes/90', 'Crosses/90', 'Passes into final 3rd/90']].reset_index(drop=True)
 
     # gb = GridOptionsBuilder.from_dataframe(filtered_df)
@@ -154,15 +154,7 @@ with tab3:
     st.dataframe(filtered_df3, hide_index=True)
     #AgGrid(filtered_df3, gridOptions=grid_options, height=400, enable_enterprise_modules=False)
 
-st.divider()
 
-st.plotly_chart(ch.chart_xg())
-
-st.plotly_chart(ch.chart_xa())
-
-st.plotly_chart(ch.chart_perform_xg().fig_u, key = 'xg_under')
-
-st.plotly_chart(ch.chart_perform_xg().fig_o, key = 'xg_over')
 
 st.divider()
 
@@ -176,7 +168,7 @@ with col_sel1:
 with col_sel2:
     player2 = st.selectbox("**Player 2**", [''] + sorted(player_names), index=0)
 
-tab1, tab2, tab3 = st.tabs(['Attacking', 'Defending', 'Goalkeeping'])
+tab1, tab2, tab3 = st.tabs(['🎯 Attacking', '🛡 Defending', '🧤 Goalkeeping'])
 
 with tab1:
     
@@ -281,3 +273,13 @@ with tab3:
         st.markdown('</div>', unsafe_allow_html=True)
     else:
         st.info('Please choose players')
+
+st.divider()
+
+st.plotly_chart(ch.chart_xg())
+
+st.plotly_chart(ch.chart_xa())
+
+st.plotly_chart(ch.chart_perform_xg().fig_u, key = 'xg_under')
+
+st.plotly_chart(ch.chart_perform_xg().fig_o, key = 'xg_over')
