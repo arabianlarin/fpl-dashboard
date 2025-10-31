@@ -259,8 +259,6 @@ def get_player_data():
     full_data['Tackles Won %'] = round(full_data['TklW_Tackles']*100/full_data['Tkl_Tackles'], 2)
     full_data['Shots on Target %'] = round(full_data['SoT_per_90_Standard']/full_data['Sh_per_90_Standard'] * 100, 2)
     full_data['diff'] = round(full_data['G_minus_PK'] - full_data['npxG_Expected'], 2)
-    full_data['photo'] = full_data['photo'].str.replace('jpg', 'png')
-    full_data['photo'] = 'photos/' + full_data.photo
     full_data['logo'] = 'logos/' + full_data.short_name + '.png'
 
     emo_map = {
