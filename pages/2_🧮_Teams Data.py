@@ -125,7 +125,7 @@ with tab5:
         # grid_options = gb.build()
         
         # AgGrid(filtered_df, gridOptions=grid_options, height=400, enable_enterprise_modules=False)
-        st.dataframe(filtered_df, hide_index=True)
+        st.dataframe(filtered_df, hide_index=True, height=735)
 
     with tab2:
         filtered_df2 = df[df.Team_or_Opponent=='opponent']
