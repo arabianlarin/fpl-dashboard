@@ -1,50 +1,50 @@
 "Squad","Player","Gls_Standard","Sh_Standard","SoT_Standard","SoT_percent_Standard","Sh_per_90_Standard","SoT_per_90_Standard","G_per_Sh_Standard","G_per_SoT_Standard","Dist_Standard"
-"Arsenal","Riccardo Calafiori",1,17,1,5.9,2.2,0.13,0.06,1,15.2
+"Arsenal","Riccardo Calafiori",1,18,2,11.1,2.11,0.23,0.06,0.5,15
 "Arsenal","Max Dowman",0,3,0,0,9.31,0,0,NA,17.3
-"Arsenal","Eberechi Eze",1,14,5,35.7,2.74,0.98,0.07,0.2,17.6
-"Arsenal","Viktor Gyökeres",3,18,6,33.3,2.15,0.72,0.11,0.33,11.2
+"Arsenal","Eberechi Eze",1,15,5,33.3,2.54,0.85,0.07,0.2,17.6
+"Arsenal","Viktor Gyökeres",4,19,7,36.8,2.14,0.79,0.16,0.43,10.7
 "Arsenal","Kai Havertz",0,0,0,NA,0,0,NA,NA,NA
 "Arsenal","Piero Hincapié",0,0,0,NA,0,0,NA,NA,NA
 "Arsenal","Myles Lewis-Skelly",0,0,0,NA,0,0,NA,NA,NA
 "Arsenal","Noni Madueke",0,5,2,40,1.48,0.59,0,0,13.3
-"Arsenal","Gabriel Magalhães",1,8,1,12.5,0.89,0.11,0.13,1,10.9
+"Arsenal","Gabriel Magalhães",1,8,1,12.5,0.8,0.1,0.13,1,10.9
 "Arsenal","Gabriel Martinelli",1,5,3,60,2.05,1.23,0.2,0.33,15.5
-"Arsenal","Mikel Merino",1,4,2,50,1.27,0.64,0.25,0.5,7.5
+"Arsenal","Mikel Merino",1,4,2,50,1.1,0.55,0.25,0.5,7.5
 "Arsenal","Cristhian Mosquera",0,0,0,NA,0,0,NA,NA,NA
-"Arsenal","Ethan Nwaneri",0,5,0,0,3.02,0,0,NA,18.8
-"Arsenal","Christian Nørgaard",0,0,0,NA,0,0,NA,NA,NA
+"Arsenal","Ethan Nwaneri",0,6,0,0,3.21,0,0,NA,20.2
+"Arsenal","Christian Nørgaard",0,1,1,100,6,6,0,0,20.6
 "Arsenal","David Raya",0,0,0,NA,0,0,NA,NA,NA
-"Arsenal","Declan Rice",1,8,2,25,1.01,0.25,0.13,0.5,21.9
-"Arsenal","Bukayo Saka",2,11,3,27.3,1.98,0.54,0.09,0.33,20
-"Arsenal","William Saliba",0,1,0,0,0.17,0,0,NA,8.5
-"Arsenal","Jurriën Timber",2,9,5,55.6,1.15,0.64,0.22,0.4,8.6
-"Arsenal","Leandro Trossard",1,12,2,16.7,2.33,0.39,0.08,0.5,9.5
+"Arsenal","Declan Rice",2,9,3,33.3,1.01,0.34,0.22,0.67,20.6
+"Arsenal","Bukayo Saka",2,13,5,38.5,1.98,0.76,0.08,0.2,19.3
+"Arsenal","William Saliba",0,1,0,0,0.14,0,0,NA,8.5
+"Arsenal","Jurriën Timber",2,11,5,45.5,1.25,0.57,0.18,0.4,9.1
+"Arsenal","Leandro Trossard",1,14,3,21.4,2.28,0.49,0.07,0.33,10.7
 "Arsenal","Ben White",0,1,0,0,1.29,0,0,NA,29.2
-"Arsenal","Martín Zubimendi",2,6,2,33.3,0.7,0.23,0.33,1,18.8
+"Arsenal","Martín Zubimendi",2,6,2,33.3,0.64,0.21,0.33,1,18.8
 "Arsenal","Martin Ødegaard",0,4,1,25,1.77,0.44,0,0,21.7
-"Aston Villa","Ross Barkley",0,1,0,0,2.73,0,0,NA,5.8
+"Aston Villa","Ross Barkley",0,3,1,33.3,4.15,1.38,0,0,16.2
 "Aston Villa","Marco Bizot",0,0,0,NA,0,0,NA,NA,NA
 "Aston Villa","Lamare Bogarde",0,0,0,NA,0,0,NA,NA,NA
 "Aston Villa","Emi Buendía",2,12,2,16.7,3.03,0.5,0.17,1,20.9
-"Aston Villa","Matty Cash",2,8,3,37.5,0.92,0.34,0.25,0.67,28.2
-"Aston Villa","Lucas Digne",0,5,2,40,0.69,0.28,0,0,20.2
+"Aston Villa","Matty Cash",2,10,4,40,1.03,0.41,0.2,0.5,28.5
+"Aston Villa","Lucas Digne",0,5,2,40,0.62,0.25,0,0,20.2
 "Aston Villa","Harvey Elliott",0,3,0,0,2.76,0,0,NA,15.3
-"Aston Villa","Evann Guessand",0,2,2,100,0.5,0.5,0,0,13.4
-"Aston Villa","Boubacar Kamara",0,2,1,50,0.38,0.19,0,0,12
-"Aston Villa","Ezri Konsa",0,1,1,100,0.13,0.13,0,0,11.1
+"Aston Villa","Evann Guessand",0,3,2,66.7,0.65,0.43,0,0,14.8
+"Aston Villa","Boubacar Kamara",0,2,1,50,0.32,0.16,0,0,12
+"Aston Villa","Ezri Konsa",0,1,1,100,0.11,0.11,0,0,11.1
 "Aston Villa","Victor Lindelöf",0,0,0,NA,0,0,NA,NA,NA
-"Aston Villa","Ian Maatsen",0,3,0,0,1.67,0,0,NA,20.9
-"Aston Villa","Donyell Malen",2,9,3,33.3,2.71,0.9,0.22,0.67,13.9
+"Aston Villa","Ian Maatsen",0,3,0,0,1.52,0,0,NA,20.9
+"Aston Villa","Donyell Malen",2,10,3,30,2.72,0.82,0.2,0.67,14.9
 "Aston Villa","Emiliano Martínez",0,0,0,NA,0,0,NA,NA,NA
-"Aston Villa","John McGinn",1,10,2,20,1.27,0.25,0.1,0.5,21.6
-"Aston Villa","Tyrone Mings",0,3,0,0,0.56,0,0,NA,8.6
-"Aston Villa","Amadou Onana",0,2,1,50,0.55,0.28,0,0,24
+"Aston Villa","John McGinn",1,10,2,20,1.17,0.23,0.1,0.5,21.6
+"Aston Villa","Tyrone Mings",0,3,0,0,0.54,0,0,NA,8.6
+"Aston Villa","Amadou Onana",0,2,1,50,0.43,0.22,0,0,24
 "Aston Villa","Bradley Paul Burrowes",0,0,0,NA,0,0,NA,NA,NA
-"Aston Villa","Morgan Rogers",1,8,5,62.5,0.9,0.56,0.13,0.2,18.4
-"Aston Villa","Jadon Sancho",0,3,2,66.7,5,3.33,0,0,10.1
+"Aston Villa","Morgan Rogers",1,11,6,54.5,1.11,0.61,0.09,0.17,18.7
+"Aston Villa","Jadon Sancho",0,4,2,50,5.07,2.54,0,0,13.5
 "Aston Villa","Youri Tielemans",0,5,1,20,1.43,0.29,0,0,18.3
-"Aston Villa","Pau Torres",0,2,0,0,0.41,0,0,NA,12.9
-"Aston Villa","Ollie Watkins",1,14,3,21.4,1.77,0.38,0.07,0.33,12.6
+"Aston Villa","Pau Torres",0,2,0,0,0.35,0,0,NA,12.9
+"Aston Villa","Ollie Watkins",1,14,3,21.4,1.6,0.34,0.07,0.33,12.6
 "Bournemouth","Tyler Adams",0,6,4,66.7,0.69,0.46,0,0,22.6
 "Bournemouth","Amine Adli",0,2,2,100,0.95,0.95,0,0,23.7
 "Bournemouth","David Brooks",0,14,3,21.4,2.65,0.57,0,0,18.6
@@ -69,113 +69,117 @@
 "Bournemouth","Adrien Truffert",0,3,0,0,0.33,0,0,NA,25.6
 "Bournemouth","Enes Ünal",0,0,0,NA,0,0,NA,NA,NA
 "Bournemouth","Ben Winterburn",0,0,0,NA,0,0,NA,NA,NA
-"Brentford","Kristoffer Ajer",0,6,1,16.7,1.81,0.3,0,0,17.2
-"Brentford","Fabio Carvalho",1,2,1,50,1.86,0.93,0.5,1,12.4
-"Brentford","Nathan Collins",0,5,3,60,0.56,0.33,0,0,9
-"Brentford","Mikkel Damsgaard",1,6,4,66.7,0.95,0.64,0.17,0.25,19.4
-"Brentford","Sepp van den Berg",0,5,3,60,0.56,0.33,0,0,7.3
-"Brentford","Jordan Henderson",0,2,0,0,0.27,0,0,NA,19.6
+"Brentford","Kristoffer Ajer",0,7,2,28.6,1.62,0.46,0,0,15.6
+"Brentford","Fabio Carvalho",1,2,1,50,1.76,0.88,0.5,1,12.4
+"Brentford","Nathan Collins",0,5,3,60,0.5,0.3,0,0,9
+"Brentford","Mikkel Damsgaard",1,7,4,57.1,1,0.57,0.14,0.25,19.6
+"Brentford","Sepp van den Berg",0,5,3,60,0.5,0.3,0,0,7.3
+"Brentford","Jordan Henderson",0,3,0,0,0.36,0,0,NA,22.7
 "Brentford","Rico Henry",0,2,0,0,1.04,0,0,NA,16.5
 "Brentford","Aaron Hickey",0,1,0,0,0.48,0,0,NA,30.8
-"Brentford","Vitaly Janelt",0,1,0,0,0.74,0,0,NA,16.6
-"Brentford","Mathias Jensen",2,3,2,66.7,1.43,0.95,0.67,1,17.4
-"Brentford","Michael Kayode",0,2,0,0,0.23,0,0,NA,14
+"Brentford","Vitaly Janelt",0,2,0,0,1.25,0,0,NA,17.1
+"Brentford","Mathias Jensen",2,3,2,66.7,1.27,0.85,0.67,1,17.4
+"Brentford","Michael Kayode",0,2,0,0,0.21,0,0,NA,14
 "Brentford","Caoimhín Kelleher",0,0,0,NA,0,0,NA,NA,NA
-"Brentford","Keane Lewis-Potter",0,3,0,0,0.63,0,0,NA,22
+"Brentford","Keane Lewis-Potter",0,3,0,0,0.6,0,0,NA,22
 "Brentford","Antoni Milambo",0,0,0,NA,0,0,NA,NA,NA
+"Brentford","Reiss Nelson",0,1,1,100,5.63,5.63,0,0,22
 "Brentford","Frank Onyeka",0,0,0,NA,0,0,NA,NA,NA
-"Brentford","Dango Ouattara",2,16,5,31.3,3.01,0.94,0.13,0.4,12
+"Brentford","Dango Ouattara",2,17,5,29.4,2.77,0.82,0.12,0.4,12.7
 "Brentford","Ethan Pinnock",0,0,0,NA,0,0,NA,NA,NA
-"Brentford","Kevin Schade",2,14,5,35.7,1.7,0.61,0.14,0.4,12.3
-"Brentford","Thiago",6,20,10,50,2.43,1.21,0.2,0.4,13.7
-"Brentford","Yehor Yarmoliuk",0,5,2,40,0.63,0.25,0,0,21.6
-"Brighton","Yasin Ayari",1,15,4,26.7,1.95,0.52,0.07,0.25,23.5
-"Brighton","Carlos Baleba",0,7,0,0,1.31,0,0,NA,29.4
+"Brentford","Kevin Schade",2,14,5,35.7,1.52,0.54,0.14,0.4,12.3
+"Brentford","Thiago",6,20,10,50,2.16,1.08,0.2,0.4,13.7
+"Brentford","Yehor Yarmoliuk",0,5,2,40,0.57,0.23,0,0,21.6
+"Brighton","Yasin Ayari",1,19,6,31.6,2.19,0.69,0.05,0.17,22.9
+"Brighton","Carlos Baleba",0,8,0,0,1.26,0,0,NA,29.1
 "Brighton","Diego Coppola",0,0,0,NA,0,0,NA,NA,NA
 "Brighton","Maxim De Cuyper",1,4,3,75,0.88,0.66,0.25,0.33,19.1
-"Brighton","Lewis Dunk",0,8,0,0,0.89,0,0,NA,18.8
-"Brighton","Diego Gómez",0,6,2,33.3,1.43,0.48,0,0,27.2
+"Brighton","Lewis Dunk",0,8,0,0,0.8,0,0,NA,18.8
+"Brighton","Diego Gómez",2,10,5,50,1.97,0.98,0.2,0.4,22.2
 "Brighton","Brajan Gruda",1,9,3,33.3,3.63,1.21,0.11,0.33,19.6
-"Brighton","Jan Paul van Hecke",1,4,2,50,0.44,0.22,0.25,0.5,16.8
+"Brighton","Jan Paul van Hecke",1,5,3,60,0.5,0.3,0.2,0.33,16.5
 "Brighton","Jack Hinshelwood",0,0,0,NA,0,0,NA,NA,NA
-"Brighton","Ferdi Kadioglu",0,4,2,50,0.65,0.32,0,0,18.1
-"Brighton","Charalampos Kostoulas",1,2,1,50,13.85,6.92,0.5,1,10.9
+"Brighton","Ferdi Kadioglu",0,4,2,50,0.56,0.28,0,0,18.1
+"Brighton","Joe Knight",0,0,0,NA,0,0,NA,NA,NA
+"Brighton","Charalampos Kostoulas",1,2,1,50,11.25,5.63,0.5,1,10.9
 "Brighton","James Milner",1,0,0,NA,0,0,NA,NA,NA
-"Brighton","Yankuba Minteh",1,14,3,21.4,1.64,0.35,0.07,0.33,14.4
+"Brighton","Yankuba Minteh",1,15,3,20,1.58,0.32,0.07,0.33,14.4
 "Brighton","Kaoru Mitoma",1,6,3,50,1.06,0.53,0.17,0.33,13
 "Brighton","Matt O'Riley",1,3,1,33.3,1.53,0.51,0,0,22.2
-"Brighton","Georginio Rutter",0,8,5,62.5,1.4,0.87,0,0,19.7
-"Brighton","Stefanos Tzimas",0,3,0,0,3.6,0,0,NA,10.8
+"Brighton","Nehemiah Oriola",0,0,0,NA,0,0,NA,NA,NA
+"Brighton","Georginio Rutter",0,9,5,55.6,1.34,0.75,0,0,20.3
+"Brighton","Stefanos Tzimas",0,3,0,0,3.21,0,0,NA,10.8
 "Brighton","Joël Veltman",0,0,0,NA,0,0,NA,NA,NA
 "Brighton","Bart Verbruggen",0,0,0,NA,0,0,NA,NA,NA
-"Brighton","Tom Watson",0,1,1,100,2.81,2.81,0,0,26
-"Brighton","Danny Welbeck",5,11,6,54.5,1.81,0.99,0.45,0.83,18.6
-"Brighton","Mats Wieffer",0,4,1,25,0.78,0.2,0,0,16.7
-"Burnley","Jaidon Anthony",4,13,8,61.5,1.57,0.97,0.31,0.5,14.5
+"Brighton","Tom Watson",0,1,1,100,2.14,2.14,0,0,26
+"Brighton","Danny Welbeck",6,13,7,53.8,1.86,1,0.46,0.86,17.9
+"Brighton","Mats Wieffer",0,4,1,25,0.65,0.16,0,0,16.7
+"Burnley","Jaidon Anthony",4,13,8,61.5,1.45,0.89,0.31,0.5,14.5
 "Burnley","Ashley Barnes",0,0,0,NA,0,0,NA,NA,NA
 "Burnley","Armando Broja",0,0,0,NA,0,0,NA,NA,NA
-"Burnley","Jacob Bruun Larsen",0,4,1,25,0.99,0.25,0,0,24.9
-"Burnley","Josh Cullen",1,4,4,100,0.47,0.47,0.25,0.25,20.3
+"Burnley","Jacob Bruun Larsen",0,4,1,25,0.92,0.23,0,0,24.9
+"Burnley","Josh Cullen",1,4,4,100,0.42,0.42,0.25,0.25,20.3
 "Burnley","Martin Dúbravka",0,0,0,NA,0,0,NA,NA,NA
-"Burnley","Marcus Edwards",0,0,0,NA,0,0,NA,NA,NA
+"Burnley","Marcus Edwards",0,1,0,0,6.43,0,0,NA,27.6
 "Burnley","Hjalmar Ekdal",0,3,1,33.3,0.51,0.17,0,0,8.4
-"Burnley","Maxime Estève",0,4,1,25,0.45,0.11,0,0,13
-"Burnley","Zian Flemming",2,5,3,60,2.23,1.34,0.4,0.67,17
+"Burnley","Maxime Estève",0,4,1,25,0.4,0.1,0,0,13
+"Burnley","Zian Flemming",2,6,3,50,1.95,0.97,0.33,0.67,16.9
 "Burnley","Lyle Foster",2,8,2,25,1.24,0.31,0.25,1,14.2
-"Burnley","Quilindschy Hartman",0,4,2,50,0.45,0.22,0,0,24.6
+"Burnley","Quilindschy Hartman",0,4,2,50,0.4,0.2,0,0,24.6
 "Burnley","Bashir Humphreys",0,0,0,NA,0,0,NA,NA,NA
-"Burnley","Josh Laurent",0,5,2,40,0.93,0.37,0,0,23.2
-"Burnley","Florentino Luís",0,2,0,0,0.38,0,0,NA,28.2
-"Burnley","Hannibal Mejbri",0,3,0,0,1.05,0,0,NA,20.8
+"Burnley","Josh Laurent",0,5,2,40,0.8,0.32,0,0,23.2
+"Burnley","Florentino Luís",0,3,0,0,0.48,0,0,NA,20.3
+"Burnley","Hannibal Mejbri",0,3,0,0,0.99,0,0,NA,20.8
 "Burnley","Oliver Sonne",0,1,0,0,0.87,0,0,NA,19.9
-"Burnley","Loum Tchaouna",1,6,2,33.3,1.57,0.52,0.17,0.5,19.9
+"Burnley","Loum Tchaouna",1,6,2,33.3,1.44,0.48,0.17,0.5,19.9
 "Burnley","Axel Tuanzebe",0,0,0,NA,0,0,NA,NA,NA
-"Burnley","Lesley Ugochukwu",2,6,2,33.3,1.18,0.39,0.33,1,14.5
-"Burnley","Kyle Walker",0,3,0,0,0.33,0,0,NA,22.4
+"Burnley","Lesley Ugochukwu",2,6,2,33.3,1.04,0.35,0.33,1,14.5
+"Burnley","Kyle Walker",0,3,0,0,0.3,0,0,NA,22.4
 "Burnley","Joe Worrall",0,0,0,NA,0,0,NA,NA,NA
 "Chelsea","Joshua Acheampong",1,3,2,66.7,0.77,0.52,0.33,0.5,8.1
 "Chelsea","Tosin Adarabioyo",0,1,0,0,0.24,0,0,NA,6.3
 "Chelsea","Benoît Badiashile",0,0,0,NA,0,0,NA,NA,NA
 "Chelsea","Facundo Buonanotte",0,0,0,NA,0,0,NA,NA,NA
-"Chelsea","Moisés Caicedo",3,10,4,40,1.18,0.47,0.3,0.75,22.3
-"Chelsea","Trevoh Chalobah",2,9,3,33.3,1.23,0.41,0.22,0.67,15.7
-"Chelsea","Marc Cucurella",0,6,1,16.7,0.75,0.13,0,0,14.5
+"Chelsea","Moisés Caicedo",3,10,4,40,1.05,0.42,0.3,0.75,22.3
+"Chelsea","Trevoh Chalobah",2,9,3,33.3,1.08,0.36,0.22,0.67,15.7
+"Chelsea","Marc Cucurella",0,7,1,14.3,0.78,0.11,0,0,14.9
 "Chelsea","Liam Delap",0,3,2,66.7,2.93,1.96,0,0,13.9
-"Chelsea","Enzo Fernández",3,14,7,50,1.78,0.89,0.14,0.29,16.4
+"Chelsea","Enzo Fernández",3,16,8,50,1.8,0.9,0.13,0.25,16.3
 "Chelsea","Wesley Fofana",0,0,0,NA,0,0,NA,NA,NA
-"Chelsea","Alejandro Garnacho",1,5,2,40,2.39,0.96,0.2,0.5,15
+"Chelsea","Alejandro Garnacho",1,6,3,50,2.13,1.07,0.17,0.33,15.5
 "Chelsea","Tyrique George",0,3,2,66.7,1.86,1.24,0,0,10.1
-"Chelsea","Jamie Gittens",0,5,2,40,2.04,0.81,0,0,23.4
+"Chelsea","Jamie Gittens",0,6,2,33.3,2.2,0.73,0,0,21.7
 "Chelsea","Marc Guiu",0,6,1,16.7,3.97,0.66,0,0,12.1
-"Chelsea","Malo Gusto",0,3,0,0,0.67,0,0,NA,28
+"Chelsea","Malo Gusto",0,3,0,0,0.57,0,0,NA,28
 "Chelsea","Jorrel Hato",0,0,0,NA,0,0,NA,NA,NA
-"Chelsea","Reece James",1,7,4,57.1,1.04,0.6,0.14,0.25,24.8
-"Chelsea","João Pedro",2,11,3,27.3,1.31,0.36,0.18,0.67,16.2
+"Chelsea","Reece James",1,9,4,44.4,1.17,0.52,0.11,0.25,25.2
+"Chelsea","João Pedro",3,16,8,50,1.7,0.85,0.19,0.38,14.7
 "Chelsea","Filip Jørgensen",0,0,0,NA,0,0,NA,NA,NA
 "Chelsea","Roméo Lavia",0,0,0,NA,0,0,NA,NA,NA
-"Chelsea","Pedro Neto",2,11,3,27.3,1.48,0.4,0.18,0.67,17.9
+"Chelsea","Pedro Neto",2,14,5,35.7,1.67,0.6,0.14,0.4,16.6
 "Chelsea","Cole Palmer",1,9,2,22.2,5.59,1.24,0.11,0.5,20.2
 "Chelsea","Robert Sánchez",0,0,0,NA,0,0,NA,NA,NA
 "Chelsea","Andrey Santos",0,5,1,20,2,0.4,0,0,15
-"Chelsea","Estêvão Willian",1,11,4,36.4,3.19,1.16,0.09,0.25,13.4
+"Chelsea","Estêvão Willian",1,11,4,36.4,3.13,1.14,0.09,0.25,13.4
+"Crystal Palace","Jaydee Canvot",0,0,0,NA,0,0,NA,NA,NA
 "Crystal Palace","Nathaniel Clyne",0,0,0,NA,0,0,NA,NA,NA
-"Crystal Palace","Justin Devenny",0,5,2,40,3.02,1.21,0,0,14.7
+"Crystal Palace","Justin Devenny",0,5,2,40,2.78,1.11,0,0,14.7
 "Crystal Palace","Odsonne Édouard",0,0,0,NA,0,0,NA,NA,NA
 "Crystal Palace","Romain Esse",0,0,0,NA,0,0,NA,NA,NA
 "Crystal Palace","Eberechi Eze",0,6,2,33.3,6.51,2.17,0,0,32.4
-"Crystal Palace","Marc Guéhi",1,8,2,25,0.89,0.22,0.13,0.5,9.1
+"Crystal Palace","Marc Guéhi",1,8,2,25,0.8,0.2,0.13,0.5,9.1
 "Crystal Palace","Dean Henderson",0,0,0,NA,0,0,NA,NA,NA
-"Crystal Palace","Will Hughes",0,3,0,0,0.63,0,0,NA,18.4
-"Crystal Palace","Daichi Kamada",0,5,2,40,0.75,0.3,0,0,19.4
-"Crystal Palace","Maxence Lacroix",0,4,1,25,0.44,0.11,0,0,14.9
-"Crystal Palace","Jefferson Lerma",0,6,2,33.3,2.9,0.97,0,0,24.2
-"Crystal Palace","Jean-Philippe Mateta",5,27,13,48.1,3.12,1.5,0.11,0.23,14.9
-"Crystal Palace","Tyrick Mitchell",1,5,3,60,0.56,0.33,0.2,0.33,17.7
-"Crystal Palace","Daniel Muñoz",1,11,5,45.5,1.22,0.56,0.09,0.2,13
+"Crystal Palace","Will Hughes",0,3,0,0,0.61,0,0,NA,18.4
+"Crystal Palace","Daichi Kamada",0,7,2,28.6,0.93,0.27,0,0,20.5
+"Crystal Palace","Maxence Lacroix",0,4,1,25,0.4,0.1,0,0,14.9
+"Crystal Palace","Jefferson Lerma",0,7,2,28.6,2.28,0.65,0,0,22.8
+"Crystal Palace","Jean-Philippe Mateta",6,29,15,51.7,3,1.55,0.14,0.27,14.7
+"Crystal Palace","Tyrick Mitchell",1,5,3,60,0.5,0.3,0.2,0.33,17.7
+"Crystal Palace","Daniel Muñoz",1,12,6,50,1.2,0.6,0.08,0.17,14.5
 "Crystal Palace","Eddie Nketiah",1,5,2,40,4.02,1.61,0.2,0.5,10.8
-"Crystal Palace","Yeremi Pino",0,9,2,22.2,1.89,0.42,0,0,20.5
-"Crystal Palace","Chris Richards",0,4,0,0,0.44,0,0,NA,10.9
-"Crystal Palace","Ismaila Sarr",3,9,3,33.3,1.33,0.44,0.33,1,8.3
+"Crystal Palace","Yeremi Pino",0,10,2,20,1.78,0.36,0,0,21.2
+"Crystal Palace","Chris Richards",0,4,0,0,0.4,0,0,NA,10.9
+"Crystal Palace","Ismaila Sarr",3,12,3,25,1.54,0.39,0.25,1,10.7
 "Crystal Palace","Borna Sosa",0,0,0,NA,0,0,NA,NA,NA
 "Crystal Palace","Christantus Uche",0,1,1,100,8.18,8.18,0,0,12.6
 "Crystal Palace","Adam Wharton",0,5,0,0,0.71,0,0,NA,26.7
@@ -184,86 +188,86 @@
 "Everton","Thierno Barry",0,5,0,0,1.79,0,0,NA,11.9
 "Everton","Beto",1,13,4,30.8,2.08,0.64,0.08,0.25,8.3
 "Everton","Séamus Coleman",0,0,0,NA,0,0,NA,NA,NA
-"Everton","Kiernan Dewsbury-Hall",1,8,1,12.5,1.01,0.13,0.13,1,12.8
+"Everton","Kiernan Dewsbury-Hall",1,8,1,12.5,1.01,0.13,0.13,1,13
 "Everton","Tyler Dibling",0,0,0,NA,0,0,NA,NA,NA
 "Everton","Idrissa Gana Gueye",1,11,2,18.2,1.29,0.23,0.09,0.5,23
-"Everton","James Garner",1,15,4,26.7,1.67,0.44,0.07,0.25,22.7
+"Everton","James Garner",1,15,4,26.7,1.67,0.44,0.07,0.25,22.6
 "Everton","Jack Grealish",1,11,5,45.5,1.53,0.7,0.09,0.2,14
 "Everton","Tim Iroegbunam",0,3,0,0,1.01,0,0,NA,24.6
 "Everton","Michael Keane",1,8,2,25,0.92,0.23,0.13,0.5,12.4
 "Everton","Dwight McNeil",0,2,0,0,7.2,0,0,NA,16.5
 "Everton","Vitaliy Mykolenko",0,2,0,0,0.34,0,0,NA,31.9
-"Everton","Iliman Ndiaye",3,8,6,75,0.95,0.71,0.25,0.33,16.9
+"Everton","Iliman Ndiaye",3,8,6,75,0.95,0.71,0.25,0.33,16.7
 "Everton","Jake O'Brien",0,5,1,20,0.57,0.11,0,0,9.9
 "Everton","Jordan Pickford",0,0,0,NA,0,0,NA,NA,NA
 "Everton","Merlin Röhl",0,3,0,0,3.8,0,0,NA,15.4
 "Everton","James Tarkowski",0,1,0,0,0.11,0,0,NA,3.4
-"Fulham","Joachim Andersen",0,3,0,0,0.4,0,0,NA,9.4
-"Fulham","Calvin Bassey",0,2,0,0,0.25,0,0,NA,17.2
-"Fulham","Sander Berge",0,2,1,50,0.23,0.12,0,0,12.8
-"Fulham","Tom Cairney",0,5,0,0,2.45,0,0,NA,18.9
+"Fulham","Joachim Andersen",0,4,0,0,0.47,0,0,NA,8.2
+"Fulham","Calvin Bassey",0,2,0,0,0.22,0,0,NA,17.2
+"Fulham","Sander Berge",0,3,1,33.3,0.31,0.1,0,0,14.8
+"Fulham","Tom Cairney",0,6,0,0,2.66,0,0,NA,18.9
 "Fulham","Timothy Castagne",0,4,0,0,0.9,0,0,NA,8.7
-"Fulham","Samuel Chukwueze",0,2,0,0,5.14,0,0,NA,16.2
+"Fulham","Samuel Chukwueze",0,4,1,25,7.35,1.84,0,0,13.8
 "Fulham","Jorge Cuenca",0,0,0,NA,0,0,NA,NA,NA
 "Fulham","Issa Diop",0,0,0,NA,0,0,NA,NA,NA
-"Fulham","Alex Iwobi",1,12,3,25,1.5,0.37,0.08,0.33,22.7
-"Fulham","Raúl Jiménez",1,12,3,25,3.33,0.83,0.08,0.33,13.3
-"Fulham","Kevin",0,2,2,100,1.12,1.12,0,0,22.7
-"Fulham","Joshua King",0,11,5,45.5,1.82,0.83,0,0,18.6
+"Fulham","Alex Iwobi",1,13,3,23.1,1.45,0.33,0.08,0.33,22.3
+"Fulham","Raúl Jiménez",1,12,3,25,2.73,0.68,0.08,0.33,13.3
+"Fulham","Kevin",0,2,2,100,0.78,0.78,0,0,22.7
+"Fulham","Joshua King",0,12,5,41.7,1.75,0.73,0,0,19
 "Fulham","Jonah Kusi-Asare",0,0,0,NA,0,0,NA,NA,NA
 "Fulham","Bernd Leno",0,0,0,NA,0,0,NA,NA,NA
 "Fulham","Saša Lukić",1,7,1,14.3,1,0.14,0.14,1,15.8
-"Fulham","Rodrigo Muniz",1,8,2,25,2.28,0.57,0.13,0.5,8.9
+"Fulham","Rodrigo Muniz",1,9,2,22.2,2.42,0.54,0.11,0.5,10.2
 "Fulham","Antonee Robinson",0,0,0,NA,0,0,NA,NA,NA
-"Fulham","Ryan Sessegnon",1,3,2,66.7,0.41,0.27,0.33,0.5,19.8
-"Fulham","Emile Smith Rowe",1,4,2,50,1.77,0.89,0.25,0.5,16.5
-"Fulham","Kenny Tete",0,1,0,0,0.17,0,0,NA,10.2
-"Fulham","Adama Traoré",0,3,0,0,1.16,0,0,NA,12.3
-"Fulham","Harry Wilson",1,13,3,23.1,2.25,0.52,0.08,0.33,18.2
-"Leeds United","Brenden Aaronson",1,12,5,41.7,1.97,0.82,0.08,0.2,14.2
-"Leeds United","Ethan Ampadu",0,4,0,0,0.59,0,0,NA,27.7
+"Fulham","Ryan Sessegnon",2,4,3,75,0.48,0.36,0.5,0.67,18.5
+"Fulham","Emile Smith Rowe",1,5,2,40,2.03,0.81,0.2,0.5,14.8
+"Fulham","Kenny Tete",0,4,2,50,0.57,0.29,0,0,20.1
+"Fulham","Adama Traoré",0,4,0,0,1.54,0,0,NA,13.9
+"Fulham","Harry Wilson",2,18,5,27.8,2.72,0.76,0.11,0.4,19.6
+"Leeds United","Brenden Aaronson",1,12,5,41.7,1.69,0.71,0.08,0.2,14.2
+"Leeds United","Ethan Ampadu",0,4,0,0,0.52,0,0,NA,27.7
 "Leeds United","Jaka Bijol",0,0,0,NA,0,0,NA,NA,NA
-"Leeds United","Jayden Bogle",0,8,2,25,0.91,0.23,0,0,18.7
+"Leeds United","Jayden Bogle",0,8,2,25,0.83,0.21,0,0,18.7
 "Leeds United","Sam Byram",0,0,0,NA,0,0,NA,NA,NA
-"Leeds United","Dominic Calvert-Lewin",1,14,7,50,2.36,1.18,0.07,0.14,12.4
+"Leeds United","Dominic Calvert-Lewin",1,15,7,46.7,2.26,1.06,0.07,0.14,13.2
 "Leeds United","Karl Darlow",0,0,0,NA,0,0,NA,NA,NA
 "Leeds United","Wilfried Gnonto",0,5,0,0,2.34,0,0,NA,21.9
 "Leeds United","Ilia Gruev",0,0,0,NA,0,0,NA,NA,NA
-"Leeds United","Gabriel Gudmundsson",0,3,0,0,0.36,0,0,NA,16.5
-"Leeds United","Jack Harrison",0,6,2,33.3,2.2,0.73,0,0,21
-"Leeds United","Daniel James",0,5,0,0,1.86,0,0,NA,16.2
+"Leeds United","Gabriel Gudmundsson",0,3,0,0,0.33,0,0,NA,16.5
+"Leeds United","Jack Harrison",0,6,2,33.3,2.08,0.69,0,0,21
+"Leeds United","Daniel James",0,5,0,0,1.65,0,0,NA,16.2
 "Leeds United","James Justin",0,0,0,NA,0,0,NA,NA,NA
-"Leeds United","Sean Longstaff",1,8,2,25,1.1,0.27,0.13,0.5,22.1
-"Leeds United","Lukas Nmecha",1,4,1,25,2,0.5,0,0,14
-"Leeds United","Noah Okafor",2,8,3,37.5,2.05,0.77,0.25,0.67,12.1
+"Leeds United","Sean Longstaff",1,10,2,20,1.26,0.25,0.1,0.5,21.9
+"Leeds United","Lukas Nmecha",1,5,2,40,2.18,0.87,0,0,13.8
+"Leeds United","Noah Okafor",2,8,3,37.5,1.69,0.63,0.25,0.67,12.1
 "Leeds United","Lucas Perri",0,0,0,NA,0,0,NA,NA,NA
 "Leeds United","Joël Piroe",0,6,2,33.3,3.29,1.1,0,0,13.9
-"Leeds United","Joe Rodon",2,8,4,50,0.89,0.44,0.25,0.5,8.4
-"Leeds United","Anton Stach",1,14,3,21.4,1.86,0.4,0.07,0.33,19.9
+"Leeds United","Joe Rodon",2,8,4,50,0.8,0.4,0.25,0.5,8.4
+"Leeds United","Anton Stach",1,15,4,26.7,1.9,0.51,0.07,0.25,19.4
 "Leeds United","Pascal Struijk",0,8,1,12.5,1,0.12,0,0,9
-"Leeds United","Ao Tanaka",0,3,0,0,1.03,0,0,NA,23.4
+"Leeds United","Ao Tanaka",0,3,0,0,0.84,0,0,NA,23.4
 "Liverpool","Alisson",0,0,0,NA,0,0,NA,NA,NA
-"Liverpool","Conor Bradley",0,2,0,0,0.5,0,0,NA,14.2
+"Liverpool","Conor Bradley",0,3,0,0,0.6,0,0,NA,20
 "Liverpool","Federico Chiesa",2,8,2,25,6.15,1.54,0.25,1,14.8
-"Liverpool","Hugo Ekitike",3,16,4,25,2.87,0.72,0.19,0.75,16.3
+"Liverpool","Hugo Ekitike",3,16,4,25,2.5,0.62,0.19,0.75,16.3
 "Liverpool","Harvey Elliott",0,0,0,NA,0,0,NA,NA,NA
 "Liverpool","Wataru Endo",0,0,0,NA,0,0,NA,NA,NA
 "Liverpool","Jeremie Frimpong",0,2,1,50,2.09,1.05,0,0,19.4
-"Liverpool","Cody Gakpo",3,22,5,22.7,2.81,0.64,0.14,0.6,15.6
+"Liverpool","Cody Gakpo",3,26,5,19.2,2.95,0.57,0.12,0.6,15.9
 "Liverpool","Joe Gomez",0,1,0,0,2.31,0,0,NA,17.5
-"Liverpool","Ryan Gravenberch",2,10,4,40,1.5,0.6,0.2,0.5,23.8
+"Liverpool","Ryan Gravenberch",3,12,5,41.7,1.56,0.65,0.25,0.6,24
 "Liverpool","Alexander Isak",0,6,1,16.7,2.15,0.36,0,0,11.6
 "Liverpool","Curtis Jones",0,4,2,50,1.1,0.55,0,0,18.9
 "Liverpool","Milos Kerkez",1,3,1,33.3,0.41,0.14,0.33,1,8.1
-"Liverpool","Ibrahima Konaté",0,4,0,0,0.49,0,0,NA,9.6
-"Liverpool","Alexis Mac Allister",0,8,2,25,1.52,0.38,0,0,19.9
+"Liverpool","Ibrahima Konaté",0,5,0,0,0.54,0,0,NA,9.6
+"Liverpool","Alexis Mac Allister",0,9,2,22.2,1.43,0.32,0,0,19
 "Liverpool","Giorgi Mamardashvili",0,0,0,NA,0,0,NA,NA,NA
 "Liverpool","Rio Ngumoha",1,1,1,100,2.73,2.73,1,1,13.3
-"Liverpool","Andrew Robertson",0,2,1,50,1.2,0.6,0,0,13.8
-"Liverpool","Mohamed Salah",3,19,7,36.8,2.13,0.78,0.11,0.29,14.3
-"Liverpool","Dominik Szoboszlai",1,17,4,23.5,1.89,0.44,0.06,0.25,23.5
-"Liverpool","Virgil van Dijk",0,4,2,50,0.44,0.22,0,0,10.1
-"Liverpool","Florian Wirtz",0,10,3,30,1.52,0.46,0,0,17
+"Liverpool","Andrew Robertson",0,3,1,33.3,1.13,0.37,0,0,14.7
+"Liverpool","Mohamed Salah",4,22,8,36.4,2.22,0.81,0.14,0.38,15.4
+"Liverpool","Dominik Szoboszlai",1,20,6,30,2,0.6,0.05,0.17,23.7
+"Liverpool","Virgil van Dijk",0,4,2,50,0.4,0.2,0,0,10.1
+"Liverpool","Florian Wirtz",0,10,3,30,1.48,0.44,0,0,17
 "Manchester City","Rayan Aït-Nouri",0,2,0,0,0.89,0,0,NA,24.9
 "Manchester City","Nathan Aké",0,3,0,0,1.32,0,0,NA,10.3
 "Manchester City","Oscar Bobb",0,3,0,0,0.59,0,0,NA,15.1
@@ -288,24 +292,24 @@
 "Manchester City","John Stones",0,0,0,NA,0,0,NA,NA,NA
 "Manchester City","James Trafford",0,0,0,NA,0,0,NA,NA,NA
 "Manchester Utd","Altay Bayındır",0,0,0,NA,0,0,NA,NA,NA
-"Manchester Utd","Casemiro",2,6,2,33.3,1.19,0.4,0.33,1,16.9
-"Manchester Utd","Matheus Cunha",1,19,9,47.4,3.28,1.55,0.05,0.11,19.7
-"Manchester Utd","Diogo Dalot",0,3,0,0,0.52,0,0,NA,21.3
-"Manchester Utd","Amad Diallo",0,11,4,36.4,1.72,0.63,0,0,14.5
-"Manchester Utd","Patrick Dorgu",0,4,0,0,0.69,0,0,NA,21.1
-"Manchester Utd","Bruno Fernandes",2,19,6,31.6,2.14,0.68,0.05,0.17,21
+"Manchester Utd","Casemiro",3,10,3,30,1.66,0.5,0.3,1,19
+"Manchester Utd","Matheus Cunha",1,21,10,47.6,3.09,1.47,0.05,0.1,20.3
+"Manchester Utd","Diogo Dalot",0,3,0,0,0.46,0,0,NA,21.3
+"Manchester Utd","Amad Diallo",1,15,6,40,2.03,0.81,0.07,0.17,16.3
+"Manchester Utd","Patrick Dorgu",0,6,1,16.7,0.99,0.16,0,0,19.1
+"Manchester Utd","Bruno Fernandes",2,21,6,28.6,2.12,0.61,0.05,0.17,21.6
 "Manchester Utd","Ayden Heaven",0,0,0,NA,0,0,NA,NA,NA
 "Manchester Utd","Senne Lammens",0,0,0,NA,0,0,NA,NA,NA
-"Manchester Utd","Matthijs de Ligt",0,6,1,16.7,0.67,0.11,0,0,9.3
+"Manchester Utd","Matthijs de Ligt",0,6,1,16.7,0.6,0.1,0,0,9.3
 "Manchester Utd","Harry Maguire",1,4,1,25,1.31,0.33,0.25,1,8.2
 "Manchester Utd","Kobbie Mainoo",0,2,0,0,1.25,0,0,NA,25.1
 "Manchester Utd","Noussair Mazraoui",0,0,0,NA,0,0,NA,NA,NA
-"Manchester Utd","Bryan Mbeumo",4,23,12,52.2,2.67,1.39,0.17,0.33,15
+"Manchester Utd","Bryan Mbeumo",4,24,13,54.2,2.5,1.35,0.17,0.31,15.1
 "Manchester Utd","Mason Mount",1,6,2,33.3,1.63,0.54,0.17,0.5,15
-"Manchester Utd","Benjamin Šeško",2,15,7,46.7,2.71,1.27,0.13,0.29,13.2
-"Manchester Utd","Luke Shaw",0,1,0,0,0.12,0,0,NA,8.9
+"Manchester Utd","Benjamin Šeško",2,18,7,38.9,2.76,1.07,0.11,0.29,13.7
+"Manchester Utd","Luke Shaw",0,1,0,0,0.11,0,0,NA,8.9
 "Manchester Utd","Manuel Ugarte",0,2,0,0,0.63,0,0,NA,30.6
-"Manchester Utd","Leny Yoro",0,3,0,0,0.49,0,0,NA,8.2
+"Manchester Utd","Leny Yoro",0,3,0,0,0.43,0,0,NA,8.2
 "Manchester Utd","Joshua Zirkzee",0,8,1,12.5,8.37,1.05,0,0,10.7
 "Newcastle Utd","Harvey Barnes",0,9,2,22.2,2.2,0.49,0,0,19.5
 "Newcastle Utd","Sven Botman",0,2,1,50,0.37,0.18,0,0,9
@@ -329,29 +333,29 @@
 "Newcastle Utd","Joe Willock",0,1,0,0,1.03,0,0,NA,13
 "Newcastle Utd","Nick Woltemade",4,12,3,25,2.26,0.57,0.25,1,10.6
 "Nott'ham Forest","Ola Aina",0,2,0,0,0.67,0,0,NA,24.6
-"Nott'ham Forest","Elliot Anderson",0,9,2,22.2,1,0.22,0,0,21.2
-"Nott'ham Forest","Taiwo Awoniyi",0,3,2,66.7,3,2,0,0,15
+"Nott'ham Forest","Elliot Anderson",0,11,2,18.2,1.1,0.2,0,0,20.8
+"Nott'ham Forest","Taiwo Awoniyi",0,3,2,66.7,2.62,1.75,0,0,15.1
 "Nott'ham Forest","Dilane Bakwa",0,3,3,100,1.55,1.55,0,0,22.2
 "Nott'ham Forest","Jair Cunha",0,0,0,NA,0,0,NA,NA,NA
 "Nott'ham Forest","Nicolás Domínguez",0,0,0,NA,0,0,NA,NA,NA
-"Nott'ham Forest","Morgan Gibbs-White",0,20,4,20,2.47,0.49,0,0,17
-"Nott'ham Forest","Callum Hudson-Odoi",1,6,4,66.7,1.12,0.75,0.17,0.25,19.4
+"Nott'ham Forest","Morgan Gibbs-White",1,22,5,22.7,2.42,0.55,0.05,0.2,16.5
+"Nott'ham Forest","Callum Hudson-Odoi",1,10,4,40,1.58,0.63,0.1,0.25,20.1
 "Nott'ham Forest","Omari Hutchinson",0,4,2,50,3.53,1.76,0,0,13.6
-"Nott'ham Forest","Igor Jesus",0,5,2,40,2.3,0.92,0,0,10.7
+"Nott'ham Forest","Igor Jesus",0,8,2,25,2.64,0.66,0,0,10.4
 "Nott'ham Forest","Arnaud Kalimuendo",0,3,0,0,3.8,0,0,NA,15.5
-"Nott'ham Forest","Douglas Luiz",0,1,0,0,0.52,0,0,NA,23
+"Nott'ham Forest","Douglas Luiz",0,1,0,0,0.49,0,0,NA,23
 "Nott'ham Forest","James Mcatee",0,1,0,0,0.7,0,0,NA,33.2
-"Nott'ham Forest","Nikola Milenković",0,5,1,20,0.56,0.11,0,0,10.2
+"Nott'ham Forest","Nikola Milenković",0,7,1,14.3,0.7,0.1,0,0,9.3
 "Nott'ham Forest","Morato",0,1,0,0,0.21,0,0,NA,21.5
-"Nott'ham Forest","Murillo",0,0,0,NA,0,0,NA,NA,NA
-"Nott'ham Forest","Dan Ndoye",1,3,1,33.3,0.47,0.16,0.33,1,16.4
+"Nott'ham Forest","Murillo",0,1,0,0,0.16,0,0,NA,9.4
+"Nott'ham Forest","Dan Ndoye",1,4,2,50,0.54,0.27,0.25,0.5,19.3
 "Nott'ham Forest","Ibrahim Sangaré",0,4,1,25,0.81,0.2,0,0,23.2
-"Nott'ham Forest","Nicolò Savona",0,0,0,NA,0,0,NA,NA,NA
+"Nott'ham Forest","Nicolò Savona",1,1,1,100,0.26,0.26,1,1,4.7
 "Nott'ham Forest","Matz Sels",0,0,0,NA,0,0,NA,NA,NA
 "Nott'ham Forest","Jota Silva",0,0,0,NA,0,0,NA,NA,NA
-"Nott'ham Forest","Neco Williams",1,10,4,40,1.11,0.44,0.1,0.25,20.4
+"Nott'ham Forest","Neco Williams",1,11,4,36.4,1.1,0.4,0.09,0.25,20.4
 "Nott'ham Forest","Chris Wood",2,16,6,37.5,2.67,1,0.13,0.33,9.5
-"Nott'ham Forest","Ryan Yates",0,1,1,100,0.66,0.66,0,0,17.2
+"Nott'ham Forest","Ryan Yates",0,1,1,100,0.42,0.42,0,0,17.2
 "Nott'ham Forest","Oleksandr Zinchenko",0,3,1,33.3,1.07,0.36,0,0,28.7
 "Sunderland","Simon Adingra",0,1,0,0,0.33,0,0,NA,14
 "Sunderland","Omar Alderete",1,6,2,33.3,0.81,0.27,0.17,0.5,12.8
@@ -376,25 +380,25 @@
 "Sunderland","Chemsdine Talbi",1,9,2,22.2,1.46,0.32,0.11,0.5,15.2
 "Sunderland","Bertrand Traoré",0,5,3,60,2.09,1.26,0,0,14.9
 "Sunderland","Granit Xhaka",0,5,2,40,0.56,0.22,0,0,23
-"Tottenham","Rodrigo Bentancur",1,6,1,16.7,0.92,0.15,0.17,1,17.1
-"Tottenham","Lucas Bergvall",1,5,3,60,1.11,0.66,0.2,0.33,12.4
+"Tottenham","Rodrigo Bentancur",1,6,1,16.7,0.84,0.14,0.17,1,17.2
+"Tottenham","Lucas Bergvall",1,5,3,60,1.09,0.65,0.2,0.33,12.4
 "Tottenham","Kevin Danso",0,0,0,NA,0,0,NA,NA,NA
 "Tottenham","Archie Gray",0,0,0,NA,0,0,NA,NA,NA
-"Tottenham","Brennan Johnson",2,5,2,40,1.24,0.5,0.4,1,17.1
-"Tottenham","Randal Kolo Muani",0,1,0,0,1.23,0,0,NA,9.9
-"Tottenham","Mohammed Kudus",1,14,5,35.7,1.61,0.57,0.07,0.2,18.2
-"Tottenham","Pape Matar Sarr",2,4,3,75,0.92,0.69,0.5,0.67,5.9
-"Tottenham","Wilson Odobert",0,7,2,28.6,1.97,0.56,0,0,12.5
-"Tottenham","João Palhinha",2,10,3,30,1.3,0.39,0.2,0.67,19.2
-"Tottenham","Pedro Porro",0,4,0,0,0.5,0,0,NA,25
-"Tottenham","Richarlison",3,16,6,37.5,2.8,1.05,0.19,0.5,10.7
-"Tottenham","Cristian Romero",0,2,1,50,0.29,0.14,0,0,19.3
-"Tottenham","Xavi Simons",0,4,1,25,0.93,0.23,0,0,20
+"Tottenham","Brennan Johnson",2,5,2,40,1.18,0.47,0.4,1,17.1
+"Tottenham","Randal Kolo Muani",0,1,0,0,0.62,0,0,NA,9.9
+"Tottenham","Mohammed Kudus",1,17,6,35.3,1.75,0.62,0.06,0.17,18.3
+"Tottenham","Pape Matar Sarr",2,4,3,75,0.75,0.56,0.5,0.67,5.9
+"Tottenham","Wilson Odobert",0,7,2,28.6,1.87,0.53,0,0,12.5
+"Tottenham","João Palhinha",2,10,3,30,1.15,0.34,0.2,0.67,19.2
+"Tottenham","Pedro Porro",0,4,0,0,0.45,0,0,NA,25
+"Tottenham","Richarlison",3,16,6,37.5,2.64,0.99,0.19,0.5,10.6
+"Tottenham","Cristian Romero",0,2,1,50,0.27,0.14,0,0,19.3
+"Tottenham","Xavi Simons",0,4,1,25,0.79,0.2,0,0,20
 "Tottenham","Dominic Solanke",0,2,1,50,5.45,2.73,0,0,15
-"Tottenham","Djed Spence",0,2,1,50,0.31,0.16,0,0,17.3
+"Tottenham","Djed Spence",0,2,1,50,0.27,0.13,0,0,17.3
 "Tottenham","Mathys Tel",1,4,1,25,1.51,0.38,0.25,1,17.8
-"Tottenham","Destiny Udogie",0,1,0,0,0.3,0,0,NA,11.7
-"Tottenham","Micky van de Ven",3,7,3,42.9,0.79,0.34,0.43,1,7
+"Tottenham","Destiny Udogie",0,1,0,0,0.28,0,0,NA,11.7
+"Tottenham","Micky van de Ven",3,7,3,42.9,0.71,0.3,0.43,1,7
 "Tottenham","Guglielmo Vicario",0,0,0,NA,0,0,NA,NA,NA
 "West Ham","Nayef Aguerd",0,2,0,0,1,0,0,NA,9.9
 "West Ham","Alphonse Areola",0,0,0,NA,0,0,NA,NA,NA
@@ -421,26 +425,26 @@
 "West Ham","Aaron Wan-Bissaka",0,0,0,NA,0,0,NA,NA,NA
 "West Ham","James Ward-Prowse",0,2,0,0,0.44,0,0,NA,27.5
 "West Ham","Callum Wilson",1,7,5,71.4,2.64,1.88,0.14,0.2,11.6
-"Wolves","Emmanuel Agbadou",0,6,2,33.3,1.03,0.34,0,0,22.1
-"Wolves","André",0,2,0,0,0.3,0,0,NA,33.1
-"Wolves","Jhon Arias",0,10,2,20,1.79,0.36,0,0,18.3
-"Wolves","Tolu Arokodare",0,6,1,16.7,2.92,0.49,0,0,12.5
-"Wolves","Jean-Ricner Bellegarde",0,8,2,25,2.09,0.52,0,0,23
-"Wolves","Hugo Bueno",0,3,1,33.3,0.44,0.15,0,0,18.8
-"Wolves","Santiago Bueno",1,2,2,100,0.37,0.37,0.5,0.5,8.6
+"Wolves","Emmanuel Agbadou",0,6,2,33.3,0.96,0.32,0,0,22.1
+"Wolves","André",0,2,0,0,0.29,0,0,NA,33.1
+"Wolves","Jhon Arias",0,10,2,20,1.65,0.33,0,0,18.3
+"Wolves","Tolu Arokodare",0,7,1,14.3,2.99,0.43,0,0,13.8
+"Wolves","Jean-Ricner Bellegarde",0,10,3,30,2.21,0.66,0,0,22.6
+"Wolves","Hugo Bueno",0,3,1,33.3,0.38,0.13,0,0,18.8
+"Wolves","Santiago Bueno",1,2,2,100,0.31,0.31,0.5,0.5,8.6
 "Wolves","Matt Doherty",0,1,0,0,0.31,0,0,NA,10.2
-"Wolves","João Gomes",0,6,0,0,0.77,0,0,NA,24
+"Wolves","João Gomes",0,6,0,0,0.72,0,0,NA,24
 "Wolves","Rodrigo Gomes",1,11,3,27.3,2.99,0.82,0.09,0.33,14.3
-"Wolves","Toti Gomes",0,2,1,50,0.46,0.23,0,0,8.8
+"Wolves","Toti Gomes",0,2,1,50,0.41,0.21,0,0,8.8
 "Wolves","Hwang Hee-chan",1,5,2,40,1.5,0.6,0.2,0.5,18.2
-"Wolves","Ki-Jana Hoever",0,1,1,100,0.44,0.44,0,0,31.7
+"Wolves","Ki-Jana Hoever",0,1,1,100,0.36,0.36,0,0,31.7
 "Wolves","Sam Johnstone",0,0,0,NA,0,0,NA,NA,NA
 "Wolves","Sasa Kalajdzic",0,0,0,NA,0,0,NA,NA,NA
-"Wolves","Ladislav Krejčí",1,6,4,66.7,1,0.67,0.17,0.25,15.2
+"Wolves","Ladislav Krejčí",1,7,5,71.4,1,0.71,0.14,0.2,14.2
 "Wolves","Fer López",0,4,1,25,3,0.75,0,0,18.9
-"Wolves","Yerson Mosquera",0,2,1,50,1.31,0.66,0,0,14.8
-"Wolves","Marshall Munetsi",1,10,5,50,1.3,0.65,0.1,0.2,14.3
+"Wolves","Yerson Mosquera",0,2,1,50,0.99,0.49,0,0,14.8
+"Wolves","Marshall Munetsi",1,11,5,45.5,1.26,0.57,0.09,0.2,14.1
 "Wolves","David Møller Wolfe",0,0,0,NA,0,0,NA,NA,NA
 "Wolves","José Sá",0,0,0,NA,0,0,NA,NA,NA
-"Wolves","Jørgen Strand Larsen",1,10,4,40,1.66,0.66,0,0,14.7
-"Wolves","Jackson Tchatchoua",0,1,0,0,0.23,0,0,NA,18.1
+"Wolves","Jørgen Strand Larsen",1,10,4,40,1.46,0.58,0,0,14.7
+"Wolves","Jackson Tchatchoua",0,1,0,0,0.21,0,0,NA,18.1
