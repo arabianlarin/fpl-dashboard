@@ -2,8 +2,8 @@ name: Run Fbref Team Data Daily
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # runs daily at 06:00 UTC
-  workflow_dispatch:      # allows manual run
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -16,7 +16,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0   # ensures full history for rebase
+          fetch-depth: 0
 
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
