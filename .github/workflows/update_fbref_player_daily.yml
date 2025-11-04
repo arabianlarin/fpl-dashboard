@@ -1,4 +1,4 @@
-name: Run Fbref Data Daily
+name: Run Fbref Player Data Daily
 
 on:
   schedule:
